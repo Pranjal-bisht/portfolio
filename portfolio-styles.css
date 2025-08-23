@@ -3461,9 +3461,10 @@ p {
 }
 
 /* Specific logo background adjustments */
-.tech-logo.python, .tech-logo.tensorflow, .tech-logo.pytorch, 
-.tech-logo.cplusplus, .tech-logo.mysql, .tech-logo.aws, 
+.tech-logo.python, .tech-logo.tensorflow, .tech-logo.pytorch,
+.tech-logo.cplusplus, .tech-logo.mysql, .tech-logo.aws,
 .tech-logo.azure, .tech-logo.langchain, .tech-logo.openai,
+.tech-logo.mlops, .tech-logo.googlecloud,
 .tool-logo.flask, .tool-logo.streamlit, .tool-logo.git {
     background: transparent;
     padding: 8px;
@@ -3479,4 +3480,12 @@ p {
 
 .tech-logo.mysql {
     background: linear-gradient(135deg, #4479a1 0%, #f29111 100%);
+}
+
+.tech-logo.mlops {
+    background: linear-gradient(135deg, #326ce5 0%, #1a4480 100%);
+}
+
+.tech-logo.googlecloud {
+    background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
 }
