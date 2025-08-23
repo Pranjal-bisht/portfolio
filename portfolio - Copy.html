@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shruti Pathak - Portfolio</title>
+  <style>
+    /* Global Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f9fafb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+    }
+    header h2 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #cbd5e1;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #3b82f6;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      width: 100%;
+      margin-top: 50px;
+      padding: 40px;
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero-text h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #94a3b8;
+    }
+    .hero-text h1 {
+      font-size: 50px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 15px;
+    }
+    .hero-text h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #60a5fa;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #cbd5e1;
+      margin-bottom: 25px;
+    }
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, #06b6d4, #3b82f6);
+      color: white;
+    }
+    .btn-primary:hover {
+      box-shadow: 0 0 20px rgba(6,182,212,0.6);
+      transform: scale(1.05);
+    }
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid #64748b;
+      color: #f1f5f9;
+    }
+    .btn-secondary:hover {
+      background: #334155;
+      transform: scale(1.05);
+    }
+
+    /* Profile Image */
+    .profile {
+      position: relative;
+    }
+    .profile img {
+      width: 350px;
+      height:400px;
+      border-radius: 50%;
+      border: 5px solid transparent;
+    
+      padding: 5px;
+      animation: float 3s ease-in-out infinite;
+    }
+   
+
+    /* Social Links */
+    .social {
+      margin-top: 20px;
+    }
+    .social a {
+      margin-right: 15px;
+      font-size: 22px;
+      color: #94a3b8;
+      transition: color 0.3s;
+    }
+    .social a:hover {
+      color: #3b82f6;
+    }
+  </style>
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h2>Shruti Pathak</h2>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Skills</a>
+      <a href="#">Projects</a>
+      <a href="#">Experience</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h3>Hello, I'm</h3>
+      <h1>Shruti Pathak</h1>
+      <h2>Full Stack Developer</h2>
+      <p>I create beautiful, responsive web applications with modern technologies. Passionate about clean code, user experience, and bringing ideas to life.</p>
+      <div class="buttons">
+        <button class="btn btn-primary">View My Work</button>
+        <button class="btn btn-secondary">Get In Touch</button>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fas fa-code"></i></a>
+      </div>
+    </div>
+    <div class="profile">
+      <img src="hero.png" alt="Shruti Pathak">
+    </div>
+  </section>
+
+</body>
+</html>

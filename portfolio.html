@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranjal Bisht - AI/ML Engineer</title>
+    <link rel="stylesheet" href="portfolio-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" onclick="scrollToSection('hero')">
+                    <h1>Pranjal Bisht</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <button onclick="scrollToSection('about')" data-en="About" data-ja="私について">About</button>
+                    <button onclick="scrollToSection('competitions')" data-en="Competitions" data-ja="競技実績">Competitions</button>
+                    <button onclick="scrollToSection('skills')" data-en="Skills" data-ja="スキル">Skills</button>
+                    <button onclick="scrollToSection('projects')" data-en="Projects" data-ja="プロジェクト">Projects</button>
+                    <button onclick="scrollToSection('research')" data-en="Research" data-ja="研究">Research</button>
+                    <button onclick="scrollToSection('experience')" data-en="Experience" data-ja="経験">Experience</button>
+                    <button onclick="scrollToSection('contact')" data-en="Contact" data-ja="お問い合わせ">Contact</button>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="language-toggle" onclick="toggleLanguage()" aria-label="Toggle language">
+                        <span class="lang-en">EN</span>
+                        <span class="lang-ja">日本語</span>
+                    </button>
+
+                    <button class="theme-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="moon-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+
+                    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                        <svg class="menu-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                        <svg class="close-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav">
+                <nav class="mobile-nav-content">
+                    <button onclick="scrollToSection('about')" data-en="About" data-ja="私について">About</button>
+                    <button onclick="scrollToSection('competitions')" data-en="Competitions" data-ja="競技実績">Competitions</button>
+                    <button onclick="scrollToSection('skills')" data-en="Skills" data-ja="スキル">Skills</button>
+                    <button onclick="scrollToSection('projects')" data-en="Projects" data-ja="プロジェクト">Projects</button>
+                    <button onclick="scrollToSection('research')" data-en="Research" data-ja="研究">Research</button>
+                    <button onclick="scrollToSection('experience')" data-en="Experience" data-ja="経験">Experience</button>
+                    <button onclick="scrollToSection('contact')" data-en="Contact" data-ja="お問い合わせ">Contact</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-intro">
+                            <p class="greeting" data-en="Hello, I'm" data-ja="はじめまして、私は">Hello, I'm</p>
+                            <h1 class="name">Pranjal Bisht</h1>
+                            <h2 class="title" data-en="AI/ML Engineer" data-ja="AI/MLエンジニア">AI/ML Engineer</h2>
+                            <p class="description" data-en="I build intelligent systems that solve real-world problems using AI and Machine Learning. Passionate about deep learning, automation, and creating impactful AI solutions." data-ja="AIと機械学習を使って現実世界の問題を解決するインテリジェントシステムを構築しています。深層学習、自動化、そしてインパクトのあるAIソリューションの作成に情熱を注いでいます。">
+                                I build intelligent systems that solve real-world problems using AI and Machine Learning. 
+                                Passionate about deep learning, automation, and creating impactful AI solutions.
+                            </p>
+                        </div>
+
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('projects')" data-en="View My Work" data-ja="私の作品を見る">
+                                View My Work
+                            </button>
+                            <button class="btn btn-outline" onclick="scrollToSection('contact')" data-en="Get In Touch" data-ja="お問い合わせ">
+                                Get In Touch
+                            </button>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/Pranjal-bisht" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pranjal-bisht-95a555220/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:bishtpranjal27@gmail.com" aria-label="Email" class="social-btn">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                            <a href="https://leetcode.com/error469/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" class="social-btn">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.518 2.524 8.117.96 2.04-1.226 2.7-3.604 2.7-3.604h-1.428c-.061-.4-.244-.76-.244-.76-.408 1.216-1.327 2.074-2.32 2.074-1.0 0-1.914-.864-1.914-1.9s.914-1.9 1.914-1.9c.993 0 1.912.858 2.32 2.074 0 0 .183.36.244.76h1.428s-.66-2.378-2.7-3.604c-2.599-1.564-5.869-1.205-8.117.96l-.039.038-4.277 4.193a5.938 5.938 0 0 1-1.271-1.818 5.83 5.83 0 0 1-.349-1.017 5.527 5.527 0 0 1-.062-2.362 5.35 5.35 0 0 1 .125-.513 5.266 5.266 0 0 1 1.209-2.104l3.854-4.126L13.483.438A1.374 1.374 0 0 0 13.483 0z"/>
+                                </svg>
+                            </a>
+                            <a href="https://codeforces.com/profile/Coder_Geralt" target="_blank" rel="noopener noreferrer" aria-label="Codeforces" class="social-btn">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5S3 20.328 3 19.5V9c0-.828.672-1.5 1.5-1.5zm7.5 0C12.828 7.5 13.5 8.172 13.5 9v10.5c0 .828-.672 1.5-1.5 1.5s-1.5-.672-1.5-1.5V9c0-.828.672-1.5 1.5-1.5zm7.5 0c.828 0 1.5.672 1.5 1.5v10.5c0 .828-.672 1.5-1.5 1.5S18 20.328 18 19.5V9c0-.828.672-1.5 1.5-1.5zM4.5 3C5.328 3 6 3.672 6 4.5S5.328 6 4.5 6 3 5.328 3 4.5 3.672 3 4.5 3zm7.5 0C12.828 3 13.5 3.672 13.5 4.5S12.828 6 12 6s-1.5-.672-1.5-1.5S11.172 3 12 3zm7.5 0c.828 0 1.5.672 1.5 1.5S20.328 6 19.5 6 18 5.328 18 4.5 18.672 3 19.5 3z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.kaggle.com/pranjalbisht" target="_blank" rel="noopener noreferrer" aria-label="Kaggle" class="social-btn">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.248.495-.248h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.334"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <div class="profile-image">
+                                <img src="hero.JPG" 
+                                     alt="Pranjal Bisht - AI/ML Engineer" 
+                                     class="profile-img">
+                            </div>
+                            <div class="wave-emoji">
+                                <span>👋</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <button class="scroll-btn" onclick="scrollToSection('about')" aria-label="Scroll to about section">
+                        <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <polyline points="19,12 12,19 5,12"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="About Me" data-ja="私について">About Me</h2>
+                    <p data-en="Get to know more about my background, experience, and what drives my passion for development." data-ja="私の背景、経験、そして開発への情熱について詳しく知ってください。">Get to know more about my background, experience, and what drives my passion for development.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="about-story">
+                            <h3 data-en="My Story" data-ja="私のストーリー">My Story</h3>
+                            <div class="story-text">
+                                <p data-en="I'm a passionate AI/ML Engineer with 3+ years of experience building intelligent systems that solve real-world problems. My journey began with Civil Engineering at IIT-BHU and evolved into AI through my fascination with data-driven solutions." data-ja="私は3年以上の経験を持つ情熱的なAI/MLエンジニアで、現実世界の問題を解決するインテリジェントシステムを構築しています。私の旅はIIT-BHUでの土木工学から始まり、データ駆動型ソリューションへの魅力を通じてAIへと発展しました。">
+                                    I'm a passionate AI/ML Engineer with <strong>3+ years of experience</strong> building intelligent systems 
+                                    that solve real-world problems. My journey began with <strong>Civil Engineering at IIT-BHU</strong> and 
+                                    evolved into AI through my fascination with data-driven solutions.
+                                </p>
+                                <p data-en="I specialize in Generative AI, Deep Learning, and LLM-based systems, working with technologies like TensorFlow, PyTorch, and AWS. Currently based in Tokyo, I've published research in ASCE Journal and built enterprise AI solutions for global companies." data-ja="生成AI、深層学習、LLMベースシステムを専門とし、TensorFlow、PyTorch、AWSなどの技術を使用しています。現在東京を拠点とし、ASCE Journalで研究を発表し、グローバル企業向けエンタープライズAIソリューションを構築しました。">
+                                    I specialize in <strong>Generative AI, Deep Learning, and LLM-based systems</strong>, working with 
+                                    technologies like TensorFlow, PyTorch, and AWS. Currently based in <strong>Tokyo</strong>, I've published 
+                                    research in <strong>ASCE Journal</strong> and built <strong>enterprise AI solutions for global companies</strong>.
+                                </p>
+                                <p data-en="When I'm not building AI models, you'll find me contributing to open-source projects, learning Japanese (JLPT N3), or exploring the intersection of AI and traditional engineering." data-ja="AIモデルの構築をしていない時は、オープンソースプロジェクトへの貢献、日本語学習（JLPT N3）、またはAIと従来の工学の交差点を探求しています。">
+                                    When I'm not building AI models, you'll find me contributing to open-source projects, 
+                                    learning Japanese (JLPT N3), or exploring the intersection of AI and traditional engineering.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                             <p class="stat-value">Top 0.5%</p>
+                             <p class="stat-label" data-en="JEE Advanced 2018" data-ja="JEE Advanced 2018">JEE Advanced 2018</p>
+                        </div>
+                        <div class="stat-card">
+                            <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                            </svg>
+                             <p class="stat-value">2</p>
+                             <p class="stat-label" data-en="Research Publications" data-ja="研究論文">Research Publications</p>
+                        </div>
+                        <div class="stat-card">
+                            <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                             <p class="stat-value">Tokyo</p>
+                             <p class="stat-label" data-en="Global Professional" data-ja="グローバルプロフェッショナル">Global Professional</p>
+                        </div>
+                        <div class="stat-card">
+                            <svg class="stat-icon" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="M5,4V7H10.5V19H13.5V7H19V4H5Z"/>
+                            </svg>
+                             <p class="stat-value">IIT-BHU</p>
+                             <p class="stat-label" data-en="Masters Elite Education" data-ja="修士エリート教育">Masters Elite Education</p>
+                         </div>
+                    </div>
+
+                    <div class="interests-section">
+                            <h3 data-en="Interests & Passions" data-ja="興味と情熱">Interests & Passions</h3>
+                            
+                            <!-- Technical Interests -->
+                            <div class="interests-category">
+                                <h4 data-en="Technical" data-ja="技術">Technical</h4>
+                            <div class="interests-tags">
+                                    <span class="tag">Generative AI (Agent Development)</span>
+                                    <span class="tag">Deep Learning</span>
+                                    <span class="tag">Computer Vision</span>
+                                    <span class="tag">NLP & LLMs</span>
+                                    <span class="tag">LLM-based Systems</span>
+                                    <span class="tag">Data Science</span>
+                                    <span class="tag">Image Segmentation</span>
+                                    <span class="tag">Recommendation Systems</span>
+                                    <span class="tag">Prompt Engineering</span>
+                                    <span class="tag">Predictive Modelling</span>
+                                    <span class="tag">MLOps</span>
+                                    <span class="tag">AI Consulting</span>
+                                    <span class="tag">Research</span>
+                                    <span class="tag">Open Source</span>
+                                    <span class="tag">Problem Solving</span>
+                                    <span class="tag">Agile Scrum</span>
+                                    <span class="tag">Sprint Planning</span>
+                                </div>
+                            </div>
+
+                            <!-- Personal Interests with Photos -->
+                            <div class="interests-category">
+                                <h4 data-en="Personal Life & Passions" data-ja="個人的な生活と情熱">Personal Life & Passions</h4>
+                                <div class="interests-gallery">
+                                    <div class="interest-item" data-interest="nature" onclick="openLightbox('photos/IMG-20240916-WA0098.jpg', '🌿 Nature & Outdoor Life')">
+                                        <div class="interest-photo">
+                                            <img src="photos/IMG-20240916-WA0098.jpg" alt="Nature & Outdoor Life" class="interest-img">
+                                            <div class="interest-overlay">
+                                                <span class="interest-label">🌿 Nature</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="interest-item" data-interest="travel" onclick="openLightbox('photos/_DSC4358.JPG', '✈️ Travel Adventures')">
+                                        <div class="interest-photo">
+                                            <img src="photos/_DSC4358.JPG" alt="Travel Adventures" class="interest-img">
+                                            <div class="interest-overlay">
+                                                <span class="interest-label">✈️ Travel</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="interest-item" data-interest="sports" onclick="openLightbox('photos/IMG-20240310-WA0025.jpg', '⚽ Sports Enthusiast')">
+                                        <div class="interest-photo">
+                                            <img src="photos/IMG-20240310-WA0025.jpg" alt="Sports Enthusiast" class="interest-img">
+                                            <div class="interest-overlay">
+                                                <span class="interest-label">⚽ Sports</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="interest-item" data-interest="hosting" onclick="openLightbox('photos/IMG-20240616-WA0014.jpg', '🎤 Event Hosting & Anchoring')">
+                                        <div class="interest-photo">
+                                            <img src="photos/IMG-20240616-WA0014.jpg" alt="Event Hosting & Anchoring" class="interest-img">
+                                            <div class="interest-overlay">
+                                                <span class="interest-label">🎤 Event Hosting</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="interest-item" data-interest="music" onclick="openLightbox('photos/IMG-20240616-WA0105.jpg', '🎸 Guitar & Singing')">
+                                        <div class="interest-photo">
+                                            <img src="photos/IMG-20240616-WA0105.jpg" alt="Guitar & Singing" class="interest-img">
+                                            <div class="interest-overlay">
+                                                <span class="interest-label">🎸 Music</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="interest-item" data-interest="trekking" onclick="openLightbox('photos/IMG-20240815-WA0023.jpg', '🏔️ Trekking Mountains')">
+                                        <div class="interest-photo">
+                                            <img src="photos/IMG-20240815-WA0023.jpg" alt="Trekking Mountains" class="interest-img">
+                                            <div class="interest-overlay">
+                                                <span class="interest-label">🏔️ Trekking</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="interest-item" data-interest="travelling" onclick="openLightbox('photos/IMG-20250105-WA0011.jpg', '🗺️ Travelling & Exploration')">
+                                        <div class="interest-photo">
+                                            <img src="photos/IMG-20250105-WA0011.jpg" alt="Travelling & Exploration" class="interest-img">
+                                            <div class="interest-overlay">
+                                                <span class="interest-label">🗺️ Travelling</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="interest-item" data-interest="photography" onclick="openLightbox('photos/IMG_20250504_212928.jpg', '📸 Photography & Love for Animals')">
+                                        <div class="interest-photo">
+                                            <img src="photos/IMG_20250504_212928.jpg" alt="Photography & Love for Animals" class="interest-img">
+                                            <div class="interest-overlay">
+                                                <span class="interest-label">📸 Photography</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="interest-item" data-interest="cultural" onclick="openLightbox('photos/IMG-20250505-WA0020.jpg', '🏛️ Cultural Exploration')">
+                                        <div class="interest-photo">
+                                            <img src="photos/IMG-20250505-WA0020.jpg" alt="Cultural Exploration" class="interest-img">
+                                            <div class="interest-overlay">
+                                                <span class="interest-label">🏛️ Cultural Exploration</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competition Achievements Section -->
+        <section id="competitions" class="competitions-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Competition Achievements" data-ja="競技実績">Competition Achievements</h2>
+                    <p data-en="Demonstrating excellence in competitive programming, data science challenges, and machine learning competitions across global platforms." data-ja="グローバルプラットフォームでの競技プログラミング、データサイエンスチャレンジ、機械学習コンペティションでの優秀な成績。">Demonstrating excellence in competitive programming, data science challenges, and machine learning competitions across global platforms.</p>
+                </div>
+
+                <div class="competitions-grid">
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <div class="competition-icon">🏆</div>
+                            <div class="competition-info">
+                                <h3 data-en="SMBC Group Green Data Science Challenge" data-ja="SMBC グループ グリーンデータサイエンスチャレンジ">SMBC Group Green Data Science Challenge</h3>
+                                <div class="competition-rank">
+                                    <span class="rank-number">310</span>
+                                    <span class="rank-label" data-en="Rank" data-ja="順位">Rank</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="competition-description" data-en="Achieved top performance in SMBC Group's sustainability-focused data science competition, demonstrating expertise in environmental data analysis and green finance solutions." data-ja="SMBC グループの持続可能性に焦点を当てたデータサイエンスコンペティションで上位成績を達成し、環境データ分析とグリーンファイナンスソリューションの専門知識を実証。">
+                            Achieved top performance in SMBC Group's sustainability-focused data science competition, demonstrating expertise in environmental data analysis and green finance solutions.
+                        </p>
+                        <div class="competition-tags">
+                            <span class="tag">Data Science</span>
+                            <span class="tag">Sustainability</span>
+                            <span class="tag">Finance</span>
+                        </div>
+                    </div>
+
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <div class="competition-icon">⚡</div>
+                            <div class="competition-info">
+                                <h3 data-en="LeetCode Biweekly Contest 73" data-ja="LeetCode 隔週コンテスト 73">LeetCode Biweekly Contest 73</h3>
+                                <div class="competition-rank">
+                                    <span class="rank-number">1272</span>
+                                    <span class="rank-total" data-en="/ 20,000" data-ja="/ 20,000">/ 20,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="competition-description" data-en="Secured top 6.4% position in LeetCode's competitive programming contest, showcasing strong algorithmic problem-solving skills and coding efficiency under time pressure." data-ja="LeetCodeの競技プログラミングコンテストで上位6.4%の成績を獲得し、時間的制約下での強力なアルゴリズム問題解決スキルとコーディング効率を実証。">
+                            Secured top 6.4% position in LeetCode's competitive programming contest, showcasing strong algorithmic problem-solving skills and coding efficiency under time pressure.
+                        </p>
+                        <div class="competition-tags">
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Problem Solving</span>
+                            <span class="tag">Competitive Programming</span>
+                        </div>
+                    </div>
+
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <div class="competition-icon">🌱</div>
+                            <div class="competition-info">
+                                <h3 data-en="Kaggle Season 5, Episode 6" data-ja="Kaggle シーズン5 エピソード6">Kaggle Season 5, Episode 6</h3>
+                                <div class="competition-subtitle" data-en="Predicting Optimal Fertilizers" data-ja="最適肥料予測">Predicting Optimal Fertilizers</div>
+                                <div class="competition-rank">
+                                    <span class="rank-number">1303</span>
+                                    <span class="rank-label" data-en="Rank" data-ja="順位">Rank</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="competition-description" data-en="Developed predictive models for agricultural optimization in Kaggle's machine learning competition, applying advanced ML techniques to solve real-world farming challenges." data-ja="Kaggleの機械学習コンペティションで農業最適化の予測モデルを開発し、実世界の農業課題解決に高度なML技術を適用。">
+                            Developed predictive models for agricultural optimization in Kaggle's machine learning competition, applying advanced ML techniques to solve real-world farming challenges.
+                        </p>
+                        <div class="competition-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Agriculture</span>
+                            <span class="tag">Predictive Modeling</span>
+                        </div>
+                    </div>
+
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <div class="competition-icon">🎓</div>
+                            <div class="competition-info">
+                                <h3 data-en="Amazon ML Summer School 2022" data-ja="Amazon ML サマースクール 2022">Amazon ML Summer School 2022</h3>
+                                <div class="competition-rank">
+                                    <span class="rank-label" data-en="Top" data-ja="上位">Top</span>
+                                    <span class="rank-number">100</span>
+                                    <span class="rank-total" data-en="/ 55,000+" data-ja="/ 55,000+">/ 55,000+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="competition-description" data-en="Selected among top 0.18% of applicants for Amazon's prestigious ML Summer School, demonstrating exceptional academic performance and machine learning expertise." data-ja="Amazonの権威あるMLサマースクールで応募者の上位0.18%に選出され、優秀な学術成績と機械学習の専門知識を実証。">
+                            Selected among top 0.18% of applicants for Amazon's prestigious ML Summer School, demonstrating exceptional academic performance and machine learning expertise.
+                        </p>
+                        <div class="competition-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Academic Excellence</span>
+                            <span class="tag">Amazon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Skills & Expertise" data-ja="スキルと専門知識">Skills & Expertise</h2>
+                    <p data-en="Over 3+ years delivering AI/ML solutions across construction-tech and enterprise platforms. Expertise in end-to-end ML pipelines, AI Agents, and production systems." data-ja="建設技術とエンタープライズプラットフォームで3年以上のAI/MLソリューション提供経験。エンドツーエンドMLパイプライン、AIエージェント、本番システムの専門知識。">Over 3+ years delivering AI/ML solutions across construction-tech and enterprise platforms. Expertise in end-to-end ML pipelines, AI Agents, and production systems.</p>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skills-category">
+                    <h3 data-en="Programming Languages" data-ja="プログラミング言語">Programming Languages</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-logo python">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                            </div>
+                            <div class="tech-info">
+                                <h4>Python</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="proficiency-text">Expert - 95%</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo cplusplus">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                            </div>
+                            <div class="tech-info">
+                                <h4>C/C++</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 80%"></div>
+                                </div>
+                                <span class="proficiency-text">Advanced - 80%</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo mysql">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+                            </div>
+                            <div class="tech-info">
+                                <h4>SQL</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="proficiency-text">Advanced - 85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="skills-category">
+                    <h3 data-en="AI & Machine Learning Frameworks" data-ja="AI・機械学習フレームワーク">AI & Machine Learning Frameworks</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-logo tensorflow">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" />
+                            </div>
+                            <div class="tech-info">
+                                <h4>TensorFlow/Keras</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 90%"></div>
+                                </div>
+                                <span class="proficiency-text">Expert - 90%</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo pytorch">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" />
+                            </div>
+                            <div class="tech-info">
+                                <h4>PyTorch</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="proficiency-text">Advanced - 85%</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo scikitlearn">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" />
+                            </div>
+                            <div class="tech-info">
+                                <h4>Scikit-learn</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 92%"></div>
+                                </div>
+                                <span class="proficiency-text">Expert - 92%</span>
+                            </div>
+                        </div>
+                                                <div class="tech-item">
+                            <div class="tech-logo opencv">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" />
+                            </div>
+                            <div class="tech-info">
+                                <h4>OpenCV</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 88%"></div>
+                                </div>
+                                <span class="proficiency-text">Advanced - 88%</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                <!-- Generative AI & LLMs -->
+                <div class="skills-category">
+                    <h3 data-en="Generative AI & LLM Systems" data-ja="生成AI・LLMシステム">Generative AI & LLM Systems</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-logo langchain">
+                                <img src="https://python.langchain.com/img/brand/wordmark.png" alt="LangChain" style="filter: brightness(0) invert(1);" />
+                            </div>
+                            <div class="tech-info">
+                                <h4>LangChain</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 90%"></div>
+                                </div>
+                                <span class="proficiency-text">Expert - 90%</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo openai">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="OpenAI GPT" />
+                            </div>
+                            <div class="tech-info">
+                                <h4>OpenAI GPT</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 88%"></div>
+                                </div>
+                                <span class="proficiency-text">Advanced - 88%</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm-1 4v12l9-6-9-6z"/>
+                            </svg>
+                                </div>
+                            <div class="tech-info">
+                                <h4>Prompt Engineering</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 92%"></div>
+                                    </div>
+                                <span class="proficiency-text">Expert - 92%</span>
+                                    </div>
+                                </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 4.5h3v3h-3v-3zm0 4.5h3v7.5h-3V9z"/>
+                                </svg>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Agent Development</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="proficiency-text">Advanced - 85%</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                <!-- Cloud & MLOps -->
+                <div class="skills-category">
+                    <h3 data-en="Cloud Platforms & MLOps" data-ja="クラウドプラットフォーム・MLOps">Cloud Platforms & MLOps</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-logo aws">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.175 0 .072-.04.144-.127.2l-.417.28c-.056.04-.120.056-.183.056-.072 0-.144-.04-.2-.104-.112-.127-.207-.263-.279-.408-.072-.144-.127-.296-.127-.456 0-.575.255-1.295.735-1.295.088 0 .183.016.28.048.096.032.2.08.31.127.04.016.072.048.072.095 0 .048-.024.088-.056.127l-.183.28c-.048.071-.12.087-.2.055-.08-.04-.167-.056-.263-.056-.183 0-.31.127-.31.336zm2.599 1.735c-.088 0-.15-.016-.183-.056-.04-.04-.056-.104-.056-.2V9.28c0-.095.024-.16.056-.2.04-.04.104-.056.183-.056h.823c.417 0 .735.095.95.288.216.192.328.48.328.863 0 .384-.112.672-.328.864-.215.192-.533.288-.95.288h-.823zm.4-2.295h-.183v1.735h.183c.264 0 .417-.048.535-.16.12-.111.184-.28.184-.52 0-.239-.064-.408-.184-.52-.118-.111-.271-.159-.535-.159zm4.047 2.431c-.104 0-.175-.016-.215-.056-.04-.04-.08-.12-.12-.24l-.735-2.431c-.016-.048-.024-.08-.024-.104 0-.048.024-.08.072-.08h.295c.104 0 .175.016.215.056.04.04.072.12.088.24l.52 2.055.487-2.055c.016-.12.048-.2.088-.24.04-.04.120-.056.215-.056h.240c.104 0 .175.016.215.056.04.04.072.12.088.24l.487 2.055.535-2.055c.016-.12.048-.2.088-.24.04-.04.112-.056.215-.056h.279c.048 0 .08.024.08.08 0 .016 0 .032-.008.048-.008.016-.016.040-.024.08l-.751 2.431c-.016.12-.048.2-.12.24-.04.04-.111.056-.215.056h-.256c-.104 0-.175-.016-.215-.056-.04-.04-.072-.12-.088-.24l-.479-1.999-.479 1.999c-.016.12-.048.2-.088.24-.04.04-.111.056-.215.056h-.256zm3.431.151c-.192 0-.383-.024-.559-.08-.183-.048-.328-.12-.415-.2-.056-.048-.096-.104-.112-.16-.016-.056-.024-.104-.024-.144v-.192c0-.048.024-.08.072-.08.024 0 .048.008.08.016.032.008.08.024.127.048.144.063.296.112.44.144.151.032.296.048.44.048.24 0 .423-.04.551-.127.127-.088.2-.2.2-.36 0-.104-.032-.2-.104-.271-.072-.072-.2-.144-.384-.2l-.551-.175c-.279-.087-.487-.2-.615-.36-.127-.159-.2-.36-.2-.583 0-.167.032-.32.104-.456.072-.144.168-.263.296-.368.127-.104.279-.184.447-.239.175-.056.36-.08.559-.08.08 0 .167.008.248.016.088.008.167.024.248.040.08.016.151.040.215.064.072.024.127.048.167.08.056.040.096.088.120.144.024.056.040.12.040.2v.18c0 .048-.024.08-.072.08-.032 0-.088-.016-.151-.048-.2-.095-.423-.144-.67-.144-.216 0-.384.032-.504.104-.127.072-.184.184-.184.336 0 .104.04.2.112.271.08.072.216.144.407.2l.543.175c.279.087.479.2.599.36.127.159.184.36.184.599 0 .167-.032.32-.096.456-.072.144-.167.263-.288.368-.127.104-.279.184-.463.239-.183.056-.383.08-.591.08zm1.295 3.207c-.616 0-1.14-.112-1.567-.328-.423-.215-.735-.504-.735-.863 0-.144.056-.288.167-.415.112-.127.256-.2.440-.2.088 0 .183.016.279.056.096.040.2.088.31.144.216.127.440.2.67.2.279 0 .52-.048.71-.144.2-.096.296-.232.296-.415 0-.12-.048-.232-.144-.328-.096-.096-.248-.184-.447-.263l-.735-.279c-.423-.159-.735-.36-.95-.599-.215-.239-.328-.52-.328-.847 0-.239.048-.456.144-.647.096-.2.232-.368.407-.504.175-.144.384-.248.615-.328.239-.08.487-.12.751-.12.32 0 .615.040.887.127.279.088.52.2.71.36.056.048.096.104.127.167.032.064.048.127.048.2v.175c0 .048-.024.08-.072.08-.032 0-.072-.008-.112-.024-.032-.016-.08-.040-.127-.064-.2-.112-.407-.2-.615-.263-.2-.064-.407-.096-.615-.096-.279 0-.504.048-.67.144-.175.096-.263.232-.263.415 0 .112.048.216.144.304.096.088.248.175.447.248l.735.279c.423.167.735.36.95.583.215.232.328.504.328.823 0 .248-.048.471-.144.671-.096.2-.232.368-.407.504-.175.144-.384.248-.615.328-.239.087-.487.127-.751.127z"/>
+                                </svg>
+                                    </div>
+                            <div class="tech-info">
+                                <h4>AWS (SageMaker, EC2, S3, Lambda)</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 88%"></div>
+                                    </div>
+                                <span class="proficiency-text">Advanced - 88%</span>
+                                </div>
+                                    </div>
+                        <div class="tech-item">
+                            <div class="tech-logo azure">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M5.483 18.262h8.017L9.177 5.738 5.483 18.262zm13.034 0L10.69 2.477c-.423-.77-1.228-1.24-2.107-1.24H6.412c-.88 0-1.685.47-2.108 1.24L.077 18.262c-.423.77-.077 1.738.693 2.161.27.148.577.224.885.224h15.69c.88 0 1.685-.47 2.108-1.24.423-.77.077-1.738-.693-2.161-.27-.148-.577-.224-.885-.224z"/>
+                                </svg>
+                                    </div>
+                            <div class="tech-info">
+                                <h4>Azure</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 75%"></div>
+                                </div>
+                                <span class="proficiency-text">Intermediate - 75%</span>
+                                    </div>
+                                    </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm-1 4v12l9-6-9-6z"/>
+                                </svg>
+                                </div>
+                            <div class="tech-info">
+                                <h4>MLOps</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 82%"></div>
+                                    </div>
+                                <span class="proficiency-text">Advanced - 82%</span>
+                                    </div>
+                                </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm-1 4v12l9-6-9-6z"/>
+                                </svg>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Google Cloud Vision</h4>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 80%"></div>
+                                </div>
+                                <span class="proficiency-text">Advanced - 80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specializations -->
+                <div class="skills-category">
+                    <h3 data-en="Core Specializations" data-ja="コア専門分野">Core Specializations</h3>
+                    <div class="specializations-grid">
+                        <div class="specialization-card">
+                            <div class="spec-icon">🤖</div>
+                            <h4 data-en="AI Agent Development" data-ja="AIエージェント開発">AI Agent Development</h4>
+                            <p data-en="LangChain, MCP, OpenAI GPT integration" data-ja="LangChain、MCP、OpenAI GPT統合">LangChain, MCP, OpenAI GPT integration</p>
+                    </div>
+                        <div class="specialization-card">
+                            <div class="spec-icon">🧠</div>
+                            <h4 data-en="Deep Learning & Computer Vision" data-ja="深層学習・コンピュータビジョン">Deep Learning & Computer Vision</h4>
+                            <p data-en="Image segmentation, satellite processing, OCR" data-ja="画像セグメンテーション、衛星処理、OCR">Image segmentation, satellite processing, OCR</p>
+                        </div>
+                        <div class="specialization-card">
+                            <div class="spec-icon">💬</div>
+                            <h4 data-en="NLP & Recommendation Systems" data-ja="NLP・推薦システム">NLP & Recommendation Systems</h4>
+                            <p data-en="Text processing, embeddings, personalization" data-ja="テキスト処理、埋め込み、パーソナライゼーション">Text processing, embeddings, personalization</p>
+                        </div>
+                        <div class="specialization-card">
+                            <div class="spec-icon">📊</div>
+                            <h4 data-en="Predictive Modeling & AutoML" data-ja="予測モデリング・AutoML">Predictive Modeling & AutoML</h4>
+                            <p data-en="Time series, risk analysis, cost estimation" data-ja="時系列、リスク分析、コスト推定">Time series, risk analysis, cost estimation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skills-category">
+                    <h3 data-en="Development Tools & Frameworks" data-ja="開発ツール・フレームワーク">Development Tools & Frameworks</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <div class="tool-logo flask">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
+                            </div>
+                            <span>Flask</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-logo fastapi">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
+                            </div>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-logo streamlit">
+                                <img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" alt="Streamlit" />
+                            </div>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-logo git">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                            </div>
+                            <span>Git/GitHub</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-logo jupyter">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter" />
+                            </div>
+                            <span>Jupyter</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-logo qgis">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/QGIS_logo%2C_2017.svg" alt="QGIS" />
+                            </div>
+                            <span>QGIS</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-logo wandb">
+                                <img src="https://assets.website-files.com/5ac6b7f2924c656f2b13a88c/5e0a328d3c53c31f5e8b4960_wandb-logo-yellow-dots-black-wb.svg" alt="Weights & Biases" />
+                            </div>
+                            <span>Weights & Biases</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-logo playwright">
+                                <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright" />
+                            </div>
+                            <span>Playwright</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-logo database">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+                            </div>
+                            <span>MySQL/PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Management -->
+                <div class="skills-category">
+                    <h3 data-en="Project Management & Business Skills" data-ja="プロジェクト管理・ビジネススキル">Project Management & Business Skills</h3>
+                    <div class="business-skills">
+                        <div class="business-skill-item">
+                            <div class="business-icon">📋</div>
+                            <span data-en="Agile/Scrum Methodology" data-ja="アジャイル/スクラム手法">Agile/Scrum Methodology</span>
+                        </div>
+                        <div class="business-skill-item">
+                            <div class="business-icon">🎯</div>
+                            <span data-en="Sprint Planning & Execution" data-ja="スプリント計画・実行">Sprint Planning & Execution</span>
+                        </div>
+                        <div class="business-skill-item">
+                            <div class="business-icon">⚠️</div>
+                            <span data-en="Risk Analysis & Mitigation" data-ja="リスク分析・軽減">Risk Analysis & Mitigation</span>
+                        </div>
+                        <div class="business-skill-item">
+                            <div class="business-icon">💰</div>
+                            <span data-en="Cost Estimation & Budgeting" data-ja="コスト推定・予算管理">Cost Estimation & Budgeting</span>
+                        </div>
+                        <div class="business-skill-item">
+                            <div class="business-icon">🤝</div>
+                            <span data-en="Cross-functional Collaboration" data-ja="クロスファンクショナル協働">Cross-functional Collaboration</span>
+                        </div>
+                        <div class="business-skill-item">
+                            <div class="business-icon">📈</div>
+                            <span data-en="Business Impact Measurement" data-ja="ビジネスインパクト測定">Business Impact Measurement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Featured Projects" data-ja="注目のプロジェクト">Featured Projects</h2>
+                    <p data-en="A showcase of my recent work and the technologies I've used to solve real-world problems." data-ja="最近の作品と、現実世界の問題を解決するために使用した技術のショーケースです。">A showcase of my recent work and the technologies I've used to solve real-world problems.</p>
+                </div>
+
+                <div class="projects-grid">
+
+
+                    <div class="project-card">
+                        <div class="project-image" onclick="openLightbox('photos/recommendations.JPG', 'WHO Wallpaper Recommendation System')" style="cursor: pointer;">
+                            <img src="photos/recommendations.JPG" alt="WHO Wallpaper Recommendation System" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://prtimes.jp/main/html/rd/p/000000251.000019866.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    <span data-en="PR Feature" data-ja="PR記事">PR Feature</span>
+                                </a>
+                                <a href="https://whohw.jp/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    <span data-en="Live Website" data-ja="ライブサイト">Live Website</span>
+                                </a>
+                                <div class="image-zoom-hint">
+                                    <svg class="zoom-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8"/>
+                                        <path d="M21 21l-4.35-4.35"/>
+                                        <line x1="11" y1="8" x2="11" y2="14"/>
+                                        <line x1="8" y1="11" x2="14" y2="11"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 data-en="WHO Wallpaper Recommendation System" data-ja="WHO壁紙推薦システム">WHO Wallpaper Recommendation System</h3>
+                            <p data-en="Built AI-powered personalized wallpaper recommendation system for WHO.jp featuring 3K+ designs. Implemented ML pipeline using AWS SageMaker and ResNet50 for pattern recognition and user preference analysis. Achieved 87.5% user engagement and 20%+ feature adoption. Featured in PR Times." data-ja="WHO.jp用に3K+のデザインを特徴とするAI駆動のパーソナライズ壁紙推薦システムを構築しました。パターン認識とユーザー嗜好分析のためにAWS SageMakerとResNet50を使用したMLパイプラインを実装。87.5%のユーザーエンゲージメントと20%+の機能採用率を達成。PR Timesで紹介されました。">Built AI-powered personalized wallpaper recommendation system for WHO.jp featuring 3K+ designs. Implemented ML pipeline using AWS SageMaker and ResNet50 for pattern recognition and user preference analysis. Achieved 87.5% user engagement and 20%+ feature adoption. Featured in PR Times.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">AWS SageMaker</span>
+                                <span class="tech-tag">ResNet50</span>
+                                <span class="tech-tag">Recommendation System</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">User Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image" onclick="openLightbox('photos/research.JPG', 'Crack Segmentation Research - ASCE Publication')" style="cursor: pointer;">
+                            <img src="photos/research.JPG" alt="Crack Segmentation Research" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://ascelibrary.org/doi/abs/10.1061/PPSCFX.SCENG-1410" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L3 7l9 5 9-5-9-5zM3 17l9 5 9-5M3 12l9 5 9-5"/>
+                                    </svg>
+                                    ASCE Paper
+                                </a>
+                                <a href="https://github.com/Pranjal-bisht/Crack_segmentation_using_deep_learning_techniques" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    GitHub Code
+                                </a>
+                                <div class="image-zoom-hint">
+                                    <svg class="zoom-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8"/>
+                                        <path d="M21 21l-4.35-4.35"/>
+                                        <line x1="11" y1="8" x2="11" y2="14"/>
+                                        <line x1="8" y1="11" x2="14" y2="11"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 data-en="Masters Thesis: Crack Segmentation Research" data-ja="修士論文：クラックセグメンテーション研究">Published Research in American Society of Civil Engineers</h3>
+                            <p data-en="Conducted comprehensive research on semantic segmentation of cracks on masonry surfaces using deep learning architectures including U-Net, DeepLabV3+, FPN, and PSPNet. Achieved 86.9% Dice coefficient with FPN architecture. Published in ASCE Journal with 302 total downloads and 7 citations." data-ja="U-Net、DeepLabV3+、FPN、PSPNetを含む深層学習アーキテクチャを使用して、石造表面のクラックのセマンティックセグメンテーションに関する包括的な研究を実施しました。FPNアーキテクチャで86.9%のDice係数を達成。ASCE Journalに掲載され、合計302回のダウンロードと7回の引用を獲得。">Conducted comprehensive research on semantic segmentation of cracks on masonry surfaces using deep learning architectures including U-Net, DeepLabV3+, FPN, and PSPNet. Achieved 86.9% Dice coefficient with FPN architecture. Published in ASCE Journal with 302 total downloads and 7 citations.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Deep Learning</span>
+                                <span class="tech-tag">U-Net</span>
+                                <span class="tech-tag">DeepLabV3+</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">Research</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="projects-cta">
+                    <a href="https://github.com/Pranjal-bisht" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span data-en="View All Projects on GitHub" data-ja="GitHubで全プロジェクトを見る">View All Projects on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Research Projects Section -->
+        <section id="research" class="research-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Featured Research Projects" data-ja="注目の研究プロジェクト">Featured Research Projects</h2>
+                    <p data-en="Academic research contributions in Computer Vision and Deep Learning, published in peer-reviewed journals." data-ja="コンピュータビジョンと深層学習における学術研究の貢献。査読付きジャーナルに掲載されています。">Academic research contributions in Computer Vision and Deep Learning, published in peer-reviewed journals.</p>
+                </div>
+
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-image" onclick="openLightbox('photos/crack detection.JPG', 'Masters Thesis: Crack Segmentation Research')" style="cursor: pointer;">
+                            <img src="photos/crack detection.JPG" alt="Crack Segmentation Research" class="research-img">
+                            <div class="research-overlay">
+                                <div class="research-badges">
+                                    <span class="badge">Published</span>
+                                    <span class="badge">ASCE Journal</span>
+                                </div>
+                                <div class="image-zoom-hint">
+                                    <svg class="zoom-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8"/>
+                                        <path d="M21 21l-4.35-4.35"/>
+                                        <line x1="11" y1="8" x2="11" y2="14"/>
+                                        <line x1="8" y1="11" x2="14" y2="11"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="research-content">
+                            <h3 data-en="Masters Thesis: Crack Segmentation" data-ja="修士論文：クラックセグメンテーション">Masters Thesis: Crack Segmentation</h3>
+                            <p class="research-description" data-en="Conducted comprehensive research on semantic segmentation of cracks on masonry surfaces using deep learning architectures. Experimented with U-Net, DeepLabV3+, FPN, and PSPNet with multiple CNN backbones and loss functions to optimize precision and recall for automated crack detection, improving infrastructure safety assessment workflows." data-ja="深層学習アーキテクチャを使用した石造表面のクラックのセマンティックセグメンテーションに関する包括的研究を実施。U-Net、DeepLabV3+、FPN、PSPNetを複数のCNNバックボーンと損失関数で実験し、自動クラック検出の精度と再現率を最適化し、インフラ安全性評価ワークフローを改善しました。">
+                                Conducted comprehensive research on semantic segmentation of cracks on masonry surfaces using deep learning architectures. 
+                                Experimented with U-Net, DeepLabV3+, FPN, and PSPNet with multiple CNN backbones and loss functions to optimize 
+                                precision and recall for automated crack detection, improving infrastructure safety assessment workflows.
+                            </p>
+                            <div class="research-achievements">
+                                <h4 data-en="Key Achievements:" data-ja="主要な成果：">Key Achievements:</h4>
+                                <ul>
+                                    <li data-en="Published findings in ASCE Journal" data-ja="ASCE Journalで研究成果を発表">Published findings in <strong>ASCE Journal</strong></li>
+                                    <li data-en="Achieved 86.9% Dice coefficient with FPN architecture" data-ja="FPNアーキテクチャで86.9%のDice係数を達成">Achieved <strong>86.9% Dice coefficient</strong> with FPN architecture</li>
+                                    <li data-en="302 total downloads, 148 in last 12 months" data-ja="合計302回のダウンロード、過去12ヶ月で148回"><strong>302 total downloads</strong>, 148 in last 12 months</li>
+                                    <li data-en="7 total citations, 7 in last 12 months" data-ja="合計7回の引用、過去12ヶ月で7回"><strong>7 total citations</strong>, 7 in last 12 months</li>
+                                    <li data-en="Applied to real-world masonry culverts and railway bridges" data-ja="実世界の石造暗渠と鉄道橋に適用">Applied to real-world masonry culverts and railway bridges</li>
+                                </ul>
+                            </div>
+                            <div class="research-tech">
+                                <span class="tech-tag">U-Net</span>
+                                <span class="tech-tag">DeepLabV3+</span>
+                                <span class="tech-tag">FPN</span>
+                                <span class="tech-tag">PSPNet</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">Infrastructure Safety</span>
+                            </div>
+                            <div class="research-links">
+                                <a href="https://ascelibrary.org/doi/abs/10.1061/PPSCFX.SCENG-1410" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L3 7l9 5 9-5-9-5zM3 17l9 5 9-5M3 12l9 5 9-5"/>
+                                    </svg>
+                                    ASCE Paper
+                                </a>
+                                <a href="https://github.com/Pranjal-bisht/Crack_segmentation_using_deep_learning_techniques" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    GitHub Code
+                                </a>
+                            </div>
+                        </div>
+                            </div>
+
+                    <div class="research-card">
+                        <div class="research-image" onclick="openLightbox('photos/Watershed.png', 'Geo-spatial Image Segmentation Research')" style="cursor: pointer;">
+                            <img src="photos/Watershed.png" alt="Geo-spatial Segmentation Research" class="research-img">
+                            <div class="research-overlay">
+                                <div class="research-badges">
+                                    <span class="badge">Computer Vision</span>
+                                    <span class="badge">GIS</span>
+                        </div>
+                                <div class="image-zoom-hint">
+                                    <svg class="zoom-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8"/>
+                                        <path d="M21 21l-4.35-4.35"/>
+                                        <line x1="11" y1="8" x2="11" y2="14"/>
+                                        <line x1="8" y1="11" x2="14" y2="11"/>
+                                    </svg>
+                    </div>
+                </div>
+                        </div>
+                        <div class="research-content">
+                            <h3 data-en="Geo-spatial Image Segmentation" data-ja="地理空間画像セグメンテーション">Geo-spatial Image Segmentation</h3>
+                            <p class="research-description" data-en="Developed a comprehensive instance segmentation pipeline for extracting building footprints from large-scale aerial and satellite imagery. Implemented a modified U-Net with batch normalization, followed by custom post-processing workflow using morphological operations, distance transform, and watershed segmentation to separate connected structures in densely compacted urban areas." data-ja="大規模な航空・衛星画像から建物フットプリントを抽出するための包括的なインスタンスセグメンテーションパイプラインを開発しました。バッチ正規化を伴う修正U-Netを実装し、形態学的操作、距離変換、ウォーターシェッドセグメンテーションを使用したカスタムポストプロセッシングワークフローにより、密集した都市部の接続構造を分離しました。">
+                                Developed a comprehensive instance segmentation pipeline for extracting building footprints from large-scale 
+                                aerial and satellite imagery. Implemented a modified U-Net with batch normalization, followed by custom 
+                                post-processing workflow using morphological operations, distance transform, and watershed segmentation 
+                                to separate connected structures in densely compacted urban areas.
+                            </p>
+                            <div class="research-achievements">
+                                <h4 data-en="Key Achievements:" data-ja="主要な成果：">Key Achievements:</h4>
+                                <ul>
+                                    <li data-en="Achieved 70% Dice coefficient on aerial imagery" data-ja="航空画像で70%のDice係数を達成">Achieved <strong>70% Dice coefficient</strong> on aerial imagery</li>
+                                    <li data-en="Generated GIS-ready vector layers for 3D building modeling" data-ja="3D建物モデリング用のGIS対応ベクターレイヤーを生成">Generated <strong>GIS-ready vector layers</strong> for 3D building modeling</li>
+                                    <li data-en="Processed large-scale satellite/UAV orthoimages" data-ja="大規模衛星/UAVオルソ画像を処理">Processed large-scale satellite/UAV orthoimages</li>
+                                    <li data-en="Enabled automated urban analysis and mapping" data-ja="自動都市分析とマッピングを実現">Enabled automated urban analysis and mapping</li>
+                                </ul>
+                            </div>
+                            <div class="research-tech">
+                                <span class="tech-tag">Modified U-Net</span>
+                                <span class="tech-tag">Watershed</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">GDAL</span>
+                                <span class="tech-tag">Satellite Imagery</span>
+                                <span class="tech-tag">Urban Planning</span>
+                            </div>
+                            <div class="research-links">
+                                <a href="https://github.com/Pranjal-bisht/Vector-Map-Generation-from-Aerial-Imagery-using-Deep-Learning-GeoSpatial-UNET" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                                    GitHub Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-cta">
+                    <div class="research-impact">
+                        <h3>Research Impact</h3>
+                        <p>Contributing to the advancement of Computer Vision applications in Civil Engineering and Urban Planning through innovative deep learning approaches.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Experience & Education" data-ja="経験と教育">Experience & Education</h2>
+                    <p data-en="My professional journey and educational background that shaped my expertise." data-ja="私の専門知識を形成した職業的な歩みと教育的背景です。">My professional journey and educational background that shaped my expertise.</p>
+                </div>
+
+                <div class="experience-grid">
+                    <div class="experience-column">
+                        <div class="column-header">
+                            <svg class="section-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                            <h3 data-en="Work Experience" data-ja="職歴">Work Experience</h3>
+                        </div>
+
+                        <div class="experience-timeline">
+                            <!-- Current Full-Time Role -->
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h4 data-en="AI/ML Engineer (Grade 2)" data-ja="AI/MLエンジニア（グレード2）">AI/ML Engineer (Grade 2)</h4>
+                                    <div class="experience-date">
+                                        <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        <span data-en="Jan 2023 - Present" data-ja="2023年1月 - 現在">Jan 2023 - Present</span>
+                                    </div>
+                                </div>
+                                <div class="company-info">
+                                    <svg class="location-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <span data-en="Nohara Group Inc. • Tokyo, Japan (Hybrid)" data-ja="野原グループ株式会社 • 東京、日本（ハイブリッド）">Nohara Group Inc. • Tokyo, Japan (Hybrid)</span>
+                                </div>
+                                <p class="job-description" data-en="Progressive AI/ML engineering role spanning multiple high-impact projects across construction technology and consumer applications. Contract: Jan'23 - Oct'23 → Full-Time: Nov'23 - Present" data-ja="建設技術と消費者アプリケーション分野で複数の高インパクトプロジェクトにまたがる革新的なAI/MLエンジニアリング職。契約社員：2023年1月〜2023年10月 → 正社員：2023年11月〜現在">Progressive AI/ML engineering role spanning multiple high-impact projects across construction technology and consumer applications. <em>Contract: Jan'23 - Oct'23 → Full-Time: Nov'23 - Present</em></p>
+                                
+                                <!-- Project Timeline -->
+                                <div class="project-timeline">
+                                    <div class="timeline-period">
+                                        <div class="period-header">
+                                            <h5 data-en="🔬 R&D Phase: Jan 2023 - Oct 2023 (Contract)" data-ja="🔬 研究開発フェーズ：2023年1月 - 2023年10月（契約）">🔬 R&D Phase: Jan 2023 - Oct 2023 (Contract)</h5>
+                                            <span class="period-subtitle" data-en="Proof of Concepts & Initial Development" data-ja="概念実証と初期開発">Proof of Concepts & Initial Development</span>
+                                        </div>
+                                        <div class="period-projects">
+                                            <div class="timeline-project">
+                                                <h6><strong data-en="🔤 NLP-Based Wallpaper Classification (POC)" data-ja="🔤 NLPベース壁紙分類システム（POC）">🔤 NLP-Based Wallpaper Classification (POC)</strong></h6>
+                                                <p data-en="Built POC using GPT-3 embedding model, Google Vision API, text similarity to classify wallpapers into Simple, Cool, Complex, Warm categories." data-ja="GPT-3埋め込みモデル、Google Vision API、テキスト類似性を使用してPOCを構築し、壁紙をシンプル、クール、複雑、ウォームのカテゴリに分類しました。">Built POC using GPT-3 embedding model, Google Vision API, text similarity to classify wallpapers into Simple, Cool, Complex, Warm categories.</p>
+                                                <ul>
+                                                    <li><strong data-en="Reduced design team workload by 2-3 hours/week" data-ja="デザインチームの作業負荷を週2-3時間削減">Reduced design team workload by 2-3 hours/week</strong></li>
+                                                    <li data-en="Exposed via AWS Lambda API for internal tagging" data-ja="内部タグ付けのためAWS Lambda APIで公開">Exposed via AWS Lambda API for internal tagging</li>
+                                    </ul>
+                                </div>
+                                            <div class="timeline-project">
+                                                <h6><strong data-en="📐 Floor Plan Area Estimation System (POC)" data-ja="📐 フロアプラン面積推定システム（POC）">📐 Floor Plan Area Estimation System (POC)</strong></h6>
+                                                <p data-en="Developed POC using Canny Edge Detection, Hough Transform, OCR to automate wallpaper measurement from architectural floor plans." data-ja="Canny Edge Detection、Hough Transform、OCRを使用してPOCを開発し、建築フロアプランからの壁紙測定を自動化しました。">Developed POC using Canny Edge Detection, Hough Transform, OCR to automate wallpaper measurement from architectural floor plans.</p>
+                                                <ul>
+                                                    <li data-en="Automated area calculation workflows" data-ja="面積計算ワークフローの自動化">Automated area calculation workflows</li>
+                                                    <li data-en="Reduced human error in measurements" data-ja="測定におけるヒューマンエラーの削減">Reduced human error in measurements</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-period">
+                                        <div class="period-header">
+                                            <h5 data-en="🎨 Production Phase: Oct 2023 - May 2025" data-ja="🎨 プロダクションフェーズ：2023年10月 - 2025年5月">🎨 Production Phase: Oct 2023 - May 2025</h5>
+                                            <span class="period-subtitle" data-en="AI Recommendation System Development" data-ja="AI推薦システム開発">AI Recommendation System Development</span>
+                                        </div>
+                                        <div class="period-projects">
+                                            <div class="timeline-project">
+                                                <h6><strong data-en="🎨 AI-Powered Wallpaper Recommendation System" data-ja="🎨 AI駆動壁紙推薦システム">🎨 AI-Powered Wallpaper Recommendation System</strong></h6>
+                                                <p data-en="Designed and deployed full ML pipeline using AWS SageMaker, ResNet50 for feature extraction. Created scalable architecture (S3 → SageMaker → Lambda) connected to WHO.jp's frontend API." data-ja="特徴抽出にAWS SageMaker、ResNet50を使用した完全なMLパイプラインを設計・展開。WHO.jpのフロントエンドAPIに接続されたスケーラブルなアーキテクチャ（S3 → SageMaker → Lambda）を構築。">Designed and deployed full ML pipeline using AWS SageMaker, ResNet50 for feature extraction. Created scalable architecture (S3 → SageMaker → Lambda) connected to WHO.jp's frontend API.</p>
+                                                <ul>
+                                                    <li data-en="87.5% user engagement, 20%+ feature adoption" data-ja="87.5%のユーザーエンゲージメント、20%+の機能採用率"><strong>87.5% user engagement</strong>, <strong>20%+ feature adoption</strong></li>
+                                                    <li data-en="Coverage of 3K+ wallpaper designs" data-ja="3K+の壁紙デザインをカバー">Coverage of <strong>3K+ wallpaper designs</strong></li>
+                                                    <li data-en="Integrated Google Analytics & Weights & Biases for A/B testing" data-ja="A/BテストのためGoogle AnalyticsとWeights & Biasesを統合">Integrated Google Analytics & Weights & Biases for A/B testing</li>
+                                                    <li data-en="Featured in prtimes.jp" data-ja="prtimes.jpで紹介"><strong>Featured in prtimes.jp</strong></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-period">
+                                        <div class="period-header">
+                                            <h5 data-en="🏗️ Enterprise Phase: June 2025 - Present (Grade 2)" data-ja="🏗️ エンタープライズフェーズ：2025年6月 - 現在（グレード2）">🏗️ Enterprise Phase: June 2025 - Present (Grade 2)</h5>
+                                            <span class="period-subtitle" data-en="Kajima Corporation - Enterprise QA Automation" data-ja="鹿島建設株式会社 - エンタープライズQA自動化">Kajima Corporation - Enterprise QA Automation</span>
+                                        </div>
+                                        <div class="period-projects">
+                                            <div class="timeline-project">
+                                                <h6><strong data-en="🏗️ MT - Kajima Corporation — E2E Test Automation & AI Agent Development" data-ja="🏗️ MT - 鹿島建設株式会社 — E2Eテスト自動化とAIエージェント開発">🏗️ MT - Kajima Corporation — E2E Test Automation & AI Agent Development</strong></h6>
+                                                <p data-en="Part of 7-member cross-functional team delivering the Managing Table Project for Kajima Corporation, the world's largest construction company. Multi-tenant enterprise platform for construction project management and design collaboration." data-ja="世界最大の建設会社である鹿島建設のManaging Tableプロジェクトを提供する7名のクロスファンクショナルチームの一員。建設プロジェクト管理と設計コラボレーションのためのマルチテナントエンタープライズプラットフォーム。">Part of 7-member cross-functional team delivering the Managing Table Project for Kajima Corporation, the world's largest construction company. Multi-tenant enterprise platform for construction project management and design collaboration.</p>
+                                                <ul>
+                                                    <li data-en="AI QA Agent Development (LangChain + OpenAI): GPT-powered QA agent automating test guide generation from JIRA tickets" data-ja="AI QAエージェント開発（LangChain + OpenAI）：JIRAチケットからテストガイド生成を自動化するGPT駆動QAエージェント"><strong>AI QA Agent Development (LangChain + OpenAI):</strong> GPT-powered QA agent automating test guide generation from JIRA tickets</li>
+                                                    <li data-en="E2E Test Automation Framework (MCP + Playwright): Prompt-to-code pipeline with UI validation and intelligent recovery" data-ja="E2Eテスト自動化フレームワーク（MCP + Playwright）：UI検証とインテリジェント回復機能を備えたプロンプト・トゥ・コードパイプライン"><strong>E2E Test Automation Framework (MCP + Playwright):</strong> Prompt-to-code pipeline with UI validation and intelligent recovery</li>
+                                                    <li data-en="50% reduction in test case development time" data-ja="テストケース開発時間を50%削減"><strong>50% reduction</strong> in test case development time</li>
+                                                    <li data-en="Established agent-first QA automation architecture" data-ja="エージェントファーストQA自動化アーキテクチャを確立">Established agent-first QA automation architecture</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="experience-tags">
+                                    <span class="exp-tag">LangChain</span>
+                                    <span class="exp-tag">OpenAI GPT</span>
+                                    <span class="exp-tag">AWS SageMaker</span>
+                                    <span class="exp-tag">ResNet50</span>
+                                    <span class="exp-tag">Playwright</span>
+                                    <span class="exp-tag">GPT-3</span>
+                                    <span class="exp-tag">Google Vision API</span>
+                                    <span class="exp-tag">OpenCV</span>
+                                    <span class="exp-tag">Weights & Biases</span>
+                                </div>
+                            </div>
+
+                            <!-- Consulting Experience -->
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h4 data-en="AI/ML Consultant - Contract" data-ja="AI/MLコンサルタント - 契約">AI/ML Consultant - Contract</h4>
+                                    <div class="experience-date">
+                                        <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        <span data-en="July 2021 - June 2022" data-ja="2021年7月 - 2022年6月">July 2021 - June 2022</span>
+                                    </div>
+                                </div>
+                                <div class="company-info">
+                                    <svg class="location-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <span data-en="Willings Inc. • Remote - Tokyo, Japan" data-ja="Willings Inc. • リモート - 東京、日本">Willings Inc. • Remote - Tokyo, Japan</span>
+                                </div>
+                                <p class="job-description" data-en="Delivered AI consulting services across finance and business sectors, specializing in predictive modeling, AutoML solutions, and revenue optimization strategies for Japanese enterprises." data-ja="金融・ビジネス分野でAIコンサルティングサービスを提供し、予測モデリング、AutoMLソリューション、日本企業向け収益最適化戦略を専門としました。">Delivered AI consulting services across finance and business sectors, specializing in predictive modeling, AutoML solutions, and revenue optimization strategies for Japanese enterprises.</p>
+                                
+                                <!-- Consulting Projects -->
+                                <div class="consulting-projects">
+                                    <div class="consulting-project">
+                                        <div class="project-header">
+                                            <h6><strong data-en="💰 Debt Return Prediction Model" data-ja="💰 債務返済予測モデル">💰 Debt Return Prediction Model</strong></h6>
+                                            <span class="client-type" data-en="Financial Services Client" data-ja="金融サービスクライアント">Financial Services Client</span>
+                                        </div>
+                                        <p data-en="Partnered with Japanese finance company to implement AutoML-based forecasting system for debt repayment timelines. Utilized PyCaret with Random Forest, Gradient Boosting, and Time Series Forecasting." data-ja="日本の金融会社と提携し、債務返済タイムラインのAutoMLベース予測システムを実装。Random Forest、Gradient Boosting、Time Series ForecastingでPyCaretを活用。">Partnered with Japanese finance company to implement AutoML-based forecasting system for debt repayment timelines. Utilized PyCaret with Random Forest, Gradient Boosting, and Time Series Forecasting.</p>
+                                        <div class="project-achievements">
+                                            <h6 data-en="Key Achievements:" data-ja="主要な成果：">Key Achievements:</h6>
+                                            <ul>
+                                                <li data-en="R² score of 0.79 in debt repayment prediction accuracy" data-ja="債務返済予測精度でR²スコア0.79を達成"><strong>R² score of 0.79</strong> in debt repayment prediction accuracy</li>
+                                                <li data-en="Pre-processed structured and unstructured financial data with advanced feature engineering" data-ja="高度な特徴量エンジニアリングで構造化・非構造化金融データを前処理">Pre-processed <strong>structured and unstructured financial data</strong> with advanced feature engineering</li>
+                                                <li data-en="Reduced loan default risk and enabled data-driven credit decisions" data-ja="貸倒リスクを削減し、データ駆動型信用判定を実現"><strong>Reduced loan default risk</strong> and enabled data-driven credit decisions</li>
+                                                <li data-en="Implemented robust model validation and monitoring pipeline" data-ja="堅牢なモデル検証・監視パイプラインを実装">Implemented robust model validation and monitoring pipeline</li>
+                                    </ul>
+                                </div>
+                                        <div class="project-tech">
+                                            <span class="tech-badge">PyCaret</span>
+                                            <span class="tech-badge">Random Forest</span>
+                                            <span class="tech-badge">Gradient Boosting</span>
+                                            <span class="tech-badge">Time Series</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="consulting-project">
+                                        <div class="project-header">
+                                            <h6><strong data-en="📈 Business Growth Strategy" data-ja="📈 ビジネス成長戦略">📈 Business Growth Strategy</strong></h6>
+                                            <span class="client-type" data-en="Portable Sanitary Services Provider" data-ja="ポータブル衛生サービス事業者">Portable Sanitary Services Provider</span>
+                                        </div>
+                                        <p data-en="Collaborated with sanitary services firm to drive revenue optimization through advanced customer analytics and AI-backed strategic recommendations." data-ja="衛生サービス企業と協力し、高度な顧客分析とAI支援戦略提案により収益最適化を推進。">Collaborated with sanitary services firm to drive revenue optimization through advanced customer analytics and AI-backed strategic recommendations.</p>
+                                        <div class="project-achievements">
+                                            <h6 data-en="Key Achievements:" data-ja="主要な成果：">Key Achievements:</h6>
+                                            <ul>
+                                                <li data-en="30% YoY revenue growth through targeted strategies" data-ja="ターゲット戦略により前年比30%の収益成長を達成"><strong>30% YoY revenue growth</strong> through targeted strategies</li>
+                                                <li data-en="Applied K-Means clustering for customer segmentation" data-ja="顧客セグメンテーションにK-Meansクラスタリングを適用">Applied <strong>K-Means clustering</strong> for customer segmentation</li>
+                                                <li data-en="Performed KPI-driven analytics to identify high-value segments" data-ja="高価値セグメント特定のためKPI駆動分析を実行">Performed <strong>KPI-driven analytics</strong> to identify high-value segments</li>
+                                                <li data-en="Delivered actionable insights for market expansion" data-ja="市場拡大のための実行可能な洞察を提供">Delivered actionable insights for market expansion</li>
+                                            </ul>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech-badge">K-Means</span>
+                                            <span class="tech-badge">Customer Analytics</span>
+                                            <span class="tech-badge">KPI Analysis</span>
+                                            <span class="tech-badge">Revenue Optimization</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="consulting-project">
+                                        <div class="project-header">
+                                            <h6><strong data-en="🏷️ AI-Driven Price Estimation Platform" data-ja="🏷️ AI駆動価格推定プラットフォーム">🏷️ AI-Driven Price Estimation Platform</strong></h6>
+                                            <span class="client-type" data-en="E-commerce & Retail Client" data-ja="Eコマース・小売クライアント">E-commerce & Retail Client</span>
+                                        </div>
+                                        <p data-en="Developed full-stack NLP-powered pricing prediction application using Flask and XGBoost. Extracted sentiment and feature insights from product reviews via TF-IDF and embeddings." data-ja="FlaskとXGBoostを使用したNLP駆動価格予測アプリケーションをフルスタック開発。TF-IDFと埋め込みによりプロダクトレビューから感情・特徴洞察を抽出。">Developed full-stack NLP-powered pricing prediction application using Flask and XGBoost. Extracted sentiment and feature insights from product reviews via TF-IDF and embeddings.</p>
+                                        <div class="project-achievements">
+                                            <h6 data-en="Key Achievements:" data-ja="主要な成果：">Key Achievements:</h6>
+                                            <ul>
+                                                <li data-en="RMSLE of 0.49 in price prediction accuracy" data-ja="価格予測精度でRMSLE 0.49を達成"><strong>RMSLE of 0.49</strong> in price prediction accuracy</li>
+                                                <li data-en="40% reduction in manual estimation workload" data-ja="手動推定作業負荷を40%削減"><strong>40% reduction</strong> in manual estimation workload</li>
+                                                <li data-en="Enabled smarter, data-driven pricing strategies" data-ja="よりスマートなデータ駆動型価格戦略を実現">Enabled <strong>smarter, data-driven pricing strategies</strong></li>
+                                                <li data-en="Built end-to-end deployment pipeline with Flask web application" data-ja="Flaskウェブアプリケーションでエンドツーエンドデプロイメントパイプラインを構築">Built end-to-end deployment pipeline with Flask web application</li>
+                                            </ul>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech-badge">Flask</span>
+                                            <span class="tech-badge">XGBoost</span>
+                                            <span class="tech-badge">TF-IDF</span>
+                                            <span class="tech-badge">NLP</span>
+                                            <span class="tech-badge">Sentiment Analysis</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="experience-tags">
+                                    <span class="exp-tag">PyCaret</span>
+                                    <span class="exp-tag">XGBoost</span>
+                                    <span class="exp-tag">Random Forest</span>
+                                    <span class="exp-tag">Time Series</span>
+                                    <span class="exp-tag">K-Means</span>
+                                    <span class="exp-tag">TF-IDF</span>
+                                    <span class="exp-tag">Flask</span>
+                                    <span class="exp-tag">AutoML</span>
+                                </div>
+                            </div>
+
+                            <!-- Internship Experience -->
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h4 data-en="Data Science Engineer - Internship" data-ja="データサイエンスエンジニア - インターンシップ">Data Science Engineer - Internship</h4>
+                                    <div class="experience-date">
+                                        <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        <span data-en="June 2022 - July 2022" data-ja="2022年6月 - 2022年7月">June 2022 - July 2022</span>
+                                    </div>
+                                </div>
+                                <div class="company-info">
+                                    <svg class="location-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <span data-en="Nohara Holdings Inc. • Remote" data-ja="野原ホールディングス株式会社 • リモート">Nohara Holdings Inc. • Remote</span>
+                                </div>
+                                <p class="job-description" data-en="Intensive summer internship focused on developing AI solutions for the construction industry, combining machine learning expertise with domain-specific challenges in cost estimation and workflow automation." data-ja="建設業界向けAIソリューション開発に焦点を当てた集中的な夏季インターンシップ。機械学習の専門知識とコスト推定・ワークフロー自動化の領域固有課題を組み合わせ。">Intensive summer internship focused on developing AI solutions for the construction industry, combining machine learning expertise with domain-specific challenges in cost estimation and workflow automation.</p>
+                                
+                                <!-- Internship Project -->
+                                <div class="internship-project">
+                                    <div class="project-header">
+                                        <h6><strong data-en="💹 BoQ-AI Estimation System" data-ja="💹 BoQ-AI推定システム">💹 BoQ-AI Estimation System</strong></h6>
+                                        <span class="internship-type" data-en="Construction Technology Project" data-ja="建設技術プロジェクト">Construction Technology Project</span>
+                                    </div>
+                                    
+                                    <div class="project-overview">
+                                        <p data-en="Project Scope: Developed comprehensive Bill of Quantity estimation system using advanced machine learning techniques to automate construction cost prediction workflows." data-ja="プロジェクト範囲：高度な機械学習技術を使用して建設コスト予測ワークフローを自動化する包括的な数量計算書推定システムを開発。"><strong>Project Scope:</strong> Developed comprehensive Bill of Quantity estimation system using advanced machine learning techniques to automate construction cost prediction workflows.</p>
+                                        
+                                        <div class="project-details">
+                                            <div class="detail-section">
+                                                <h6 data-en="🔧 Technical Implementation:" data-ja="🔧 技術実装：">🔧 Technical Implementation:</h6>
+                                                <ul>
+                                                    <li data-en="Machine Learning Model: XGBoost algorithm achieving 85% accuracy in cost predictions" data-ja="機械学習モデル：コスト予測で85%の精度を達成するXGBoostアルゴリズム"><strong>Machine Learning Model:</strong> XGBoost algorithm achieving <strong>85% accuracy</strong> in cost predictions</li>
+                                                    <li data-en="NLP Processing: Leveraged Nagisa for Japanese text embedding and language processing" data-ja="NLP処理：日本語テキスト埋め込みと言語処理にNagisaを活用"><strong>NLP Processing:</strong> Leveraged Nagisa for Japanese text embedding and language processing</li>
+                                                    <li data-en="Web Application: Built full-stack price prediction app using Flask framework" data-ja="ウェブアプリケーション：Flaskフレームワークを使用したフルスタック価格予測アプリを構築"><strong>Web Application:</strong> Built full-stack price prediction app using Flask framework</li>
+                                                    <li data-en="Cloud Deployment: Deployed production-ready solution on AWS EC2 infrastructure" data-ja="クラウドデプロイメント：AWS EC2インフラストラクチャに本番対応ソリューションをデプロイ"><strong>Cloud Deployment:</strong> Deployed production-ready solution on AWS EC2 infrastructure</li>
+                                    </ul>
+                                </div>
+                                            
+                                            <div class="detail-section">
+                                                <h6 data-en="🎯 Business Impact:" data-ja="🎯 ビジネスインパクト：">🎯 Business Impact:</h6>
+                                                <ul>
+                                                    <li data-en="Process Automation: Automated manual quotation workflows for construction industry" data-ja="プロセス自動化：建設業界の手動見積ワークフローを自動化"><strong>Process Automation:</strong> Automated manual quotation workflows for construction industry</li>
+                                                    <li data-en="Accuracy Improvement: Significantly improved estimation precision compared to traditional methods" data-ja="精度向上：従来手法と比較して推定精度を大幅に改善"><strong>Accuracy Improvement:</strong> Significantly improved estimation precision compared to traditional methods</li>
+                                                    <li data-en="Cost Efficiency: Reduced time and resources required for project cost estimation" data-ja="コスト効率：プロジェクトコスト推定に必要な時間とリソースを削減"><strong>Cost Efficiency:</strong> Reduced time and resources required for project cost estimation</li>
+                                                    <li data-en="Scalable Solution: Created reusable framework for future construction projects" data-ja="スケーラブルソリューション：将来の建設プロジェクト向け再利用可能フレームワークを作成"><strong>Scalable Solution:</strong> Created reusable framework for future construction projects</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="detail-section">
+                                                <h6 data-en="🏆 Recognition & Outcomes:" data-ja="🏆 評価と成果：">🏆 Recognition & Outcomes:</h6>
+                                                <ul>
+                                                    <li data-en="Secured Pre-Placement Offer (PPO) for full-time AI Engineer role due to outstanding performance" data-ja="優秀な成績により正社員AIエンジニア職のプリプレースメントオファー（PPO）を獲得"><strong>Secured Pre-Placement Offer (PPO)</strong> for full-time AI Engineer role due to outstanding performance</li>
+                                                    <li data-en="Industry Application: Solution addressed real-world construction industry challenges" data-ja="産業応用：実世界の建設業界課題に対応するソリューション"><strong>Industry Application:</strong> Solution addressed real-world construction industry challenges</li>
+                                                    <li data-en="Technical Excellence: Demonstrated proficiency in end-to-end ML solution development" data-ja="技術的卓越性：エンドツーエンドMLソリューション開発の習熟度を実証"><strong>Technical Excellence:</strong> Demonstrated proficiency in end-to-end ML solution development</li>
+                                                    <li data-en="Cross-functional Skills: Combined domain expertise with advanced technical implementation" data-ja="クロスファンクショナルスキル：ドメイン専門知識と高度な技術実装を組み合わせ"><strong>Cross-functional Skills:</strong> Combined domain expertise with advanced technical implementation</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="project-tech">
+                                        <span class="tech-badge">XGBoost</span>
+                                        <span class="tech-badge">Nagisa NLP</span>
+                                        <span class="tech-badge">Flask</span>
+                                        <span class="tech-badge">AWS EC2</span>
+                                        <span class="tech-badge">Python</span>
+                                        <span class="tech-badge">Japanese NLP</span>
+                                        <span class="tech-badge">Construction AI</span>
+                                        <span class="tech-badge">Web Development</span>
+                                    </div>
+                                </div>
+
+                                <div class="experience-tags">
+                                    <span class="exp-tag">XGBoost</span>
+                                    <span class="exp-tag">Nagisa NLP</span>
+                                    <span class="exp-tag">Flask</span>
+                                    <span class="exp-tag">AWS EC2</span>
+                                    <span class="exp-tag">Construction AI</span>
+                                    <span class="exp-tag">Japanese NLP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-column">
+                        <div class="column-header">
+                            <svg class="section-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                            <h3 data-en="Education & Certifications" data-ja="教育と資格">Education & Certifications</h3>
+                        </div>
+
+                        <div class="education-timeline">
+                            <div class="education-item enhanced-education">
+                                <div class="education-header">
+                                    <div class="university-logo">
+                                        <img src="photos/IIT BHU logo.png" alt="IIT BHU Logo" class="university-logo-img">
+                                    </div>
+                                    <div class="education-main">
+                                        <h4 data-en="M.Tech in Structural Engineering" data-ja="構造工学修士">M.Tech in Structural Engineering</h4>
+                                <div class="education-details">
+                                            <div class="university-info">
+                                                <span class="university-name" data-en="Indian Institute of Technology (BHU)" data-ja="インド工科大学（BHU）">Indian Institute of Technology (BHU)</span>
+                                                <span class="university-location" data-en="Varanasi, India" data-ja="バラナシ、インド">Varanasi, India</span>
+                                            </div>
+                                    <span class="education-date">
+                                        <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                                Jul 2022 - Oct 2023
+                                    </span>
+                                </div>
+                                    </div>
+                                </div>
+                                <div class="education-content">
+                                    <div class="degree-focus">
+                                        <h6>Research Focus: Structural Health Monitoring & AI</h6>
+                                        <p>Specialized in integrating artificial intelligence and machine learning techniques with structural engineering for infrastructure safety assessment and automated damage detection.</p>
+                                    </div>
+                                    <div class="achievements-grid">
+                                        <div class="achievement-item academic">
+                                            <div class="achievement-icon">🎓</div>
+                                            <div class="achievement-content">
+                                                <h6>Academic Excellence</h6>
+                                                <span><strong>GPA: 9.04/10.0</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="achievement-item research">
+                                            <div class="achievement-icon">📄</div>
+                                            <div class="achievement-content">
+                                                <h6>Research Publication</h6>
+                                                <span>Published in <strong>ASCE Journal</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="achievement-item innovation">
+                                            <div class="achievement-icon">🤖</div>
+                                            <div class="achievement-content">
+                                                <h6>Innovation Project</h6>
+                                                <span>Crack Segmentation using <strong>Deep Learning</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="education-item enhanced-education">
+                                <div class="education-header">
+                                    <div class="university-logo">
+                                        <img src="photos/IIT BHU logo.png" alt="IIT BHU Logo" class="university-logo-img">
+                                    </div>
+                                    <div class="education-main">
+                                        <h4 data-en="B.Tech in Civil Engineering" data-ja="土木工学学士">B.Tech in Civil Engineering</h4>
+                                        <div class="education-details">
+                                            <div class="university-info">
+                                                <span class="university-name" data-en="Indian Institute of Technology (BHU)" data-ja="インド工科大学（BHU）">Indian Institute of Technology (BHU)</span>
+                                                <span class="university-location" data-en="Varanasi, India" data-ja="バラナシ、インド">Varanasi, India</span>
+                                            </div>
+                                            <span class="education-date">
+                                                <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                                </svg>
+                                                Jul 2018 - Jul 2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="education-content">
+                                    <div class="degree-focus">
+                                        <h6>Foundation in Engineering Excellence</h6>
+                                        <p>Comprehensive undergraduate program combining theoretical foundations with practical applications in civil engineering, while developing strong analytical and problem-solving skills.</p>
+                                    </div>
+                                    <div class="achievements-grid">
+                                        <div class="achievement-item competitive">
+                                            <div class="achievement-icon">🏆</div>
+                                            <div class="achievement-content">
+                                                <h6>ML Summer School</h6>
+                                                <span>Amazon ML School 2022 - <strong>Top 100/55,000+</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="achievement-item entrance">
+                                            <div class="achievement-icon">🎯</div>
+                                            <div class="achievement-content">
+                                                <h6>JEE Advanced 2018</h6>
+                                                <span><strong>Top 5%</strong> among 200,000+ candidates</span>
+                                            </div>
+                                        </div>
+                                        <div class="achievement-item placement">
+                                            <div class="achievement-icon">🌍</div>
+                                            <div class="achievement-content">
+                                                <h6>International Offers</h6>
+                                                <span>Among <strong>10 placement offers</strong> received</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <h4 data-en="Professional Certifications" data-ja="専門資格">Professional Certifications</h4>
+                                <div class="education-details">
+                                    <span data-en="AI/ML & Language Proficiency" data-ja="AI/MLと語学能力">AI/ML & Language Proficiency</span>
+                                    <span class="education-date">
+                                        <svg class="date-icon" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        2020-2023
+                                    </span>
+                                </div>
+                                
+                                <!-- Certifications Grid -->
+                                <div class="certifications-grid">
+                                    <div class="certification-item">
+                                        <div class="cert-header">
+                                            <div class="cert-icon coursera-icon">
+                                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.5 16.5h-2.25V12c0-.621-.504-1.125-1.125-1.125s-1.125.504-1.125 1.125v4.5H9.75V9.75h2.25v.75c.375-.375.9-.75 1.5-.75 1.242 0 2.25 1.008 2.25 2.25v4.5h.75z"/>
+                                                </svg>
+                            </div>
+                                            <div class="cert-info">
+                                                <h5 data-en="Machine Learning" data-ja="機械学習">Machine Learning</h5>
+                                                <span class="cert-provider" data-en="Stanford University via Coursera" data-ja="スタンフォード大学 via Coursera">Stanford University via Coursera</span>
+                                                <span class="cert-date">2022</span>
+                        </div>
+                                            <a href="https://www.coursera.org/account/accomplishments/verify/SZ4JBWDL5RHZ" target="_blank" rel="noopener noreferrer" class="cert-link">
+                                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                                    <polyline points="15,3 21,3 21,9"/>
+                                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <p class="cert-description" data-en="Comprehensive course covering supervised and unsupervised learning, neural networks, and practical ML applications." data-ja="教師あり学習、教師なし学習、ニューラルネットワーク、実用的なML応用を網羅する包括的なコース。">Comprehensive course covering supervised and unsupervised learning, neural networks, and practical ML applications.</p>
+                                        <div class="cert-skills">
+                                            <span class="skill-tag">Machine Learning</span>
+                                            <span class="skill-tag">Supervised Learning</span>
+                                            <span class="skill-tag">Neural Networks</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="certification-item">
+                                        <div class="cert-header">
+                                            <div class="cert-icon coursera-icon">
+                                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.5 16.5h-2.25V12c0-.621-.504-1.125-1.125-1.125s-1.125.504-1.125 1.125v4.5H9.75V9.75h2.25v.75c.375-.375.9-.75 1.5-.75 1.242 0 2.25 1.008 2.25 2.25v4.5h.75z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="cert-info">
+                                                <h5 data-en="Neural Networks and Deep Learning" data-ja="ニューラルネットワークと深層学習">Neural Networks and Deep Learning</h5>
+                                                <span class="cert-provider" data-en="DeepLearning.AI via Coursera" data-ja="DeepLearning.AI via Coursera">DeepLearning.AI via Coursera</span>
+                                                <span class="cert-date">July 2020</span>
+                                            </div>
+                                            <a href="https://www.coursera.org/account/accomplishments/verify/XB7P4Y3GUR4H" target="_blank" rel="noopener noreferrer" class="cert-link">
+                                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                                    <polyline points="15,3 21,3 21,9"/>
+                                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <p class="cert-description" data-en="Deep learning fundamentals including artificial neural networks, performance tuning, and supervised learning with Python." data-ja="人工ニューラルネットワーク、パフォーマンスチューニング、Pythonによる教師あり学習を含む深層学習の基礎。">Deep learning fundamentals including artificial neural networks, performance tuning, and supervised learning with Python.</p>
+                                        <div class="cert-skills">
+                                            <span class="skill-tag">Deep Learning</span>
+                                            <span class="skill-tag">Python</span>
+                                            <span class="skill-tag">Neural Networks</span>
+                                            <span class="skill-tag">TensorFlow</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="certification-item">
+                                        <div class="cert-header">
+                                            <div class="cert-icon udemy-icon">
+                                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M12 0L1.608 6v12L12 24l10.392-6V6L12 0zm-6.8 9.2c0-3.747 2.653-6.8 6.8-6.8s6.8 3.053 6.8 6.8-2.653 6.8-6.8 6.8-6.8-3.053-6.8-6.8z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="cert-info">
+                                                <h5 data-en="TensorFlow + Keras Deep Learning" data-ja="TensorFlow + Keras深層学習">TensorFlow + Keras Deep Learning</h5>
+                                                <span class="cert-provider" data-en="Udemy" data-ja="Udemy">Udemy</span>
+                                                <span class="cert-date">2022</span>
+                                            </div>
+                                            <a href="https://www.udemy.com/certificate/UC-3cb8b7ce-34e1-48bd-a48e-9103427aa886/" target="_blank" rel="noopener noreferrer" class="cert-link">
+                                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                                    <polyline points="15,3 21,3 21,9"/>
+                                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <p class="cert-description" data-en="Practical deep learning implementation using TensorFlow and Keras for real-world AI applications and model deployment." data-ja="実世界のAIアプリケーションとモデルデプロイメントのためのTensorFlowとKerasを使用した実用的な深層学習実装。">Practical deep learning implementation using TensorFlow and Keras for real-world AI applications and model deployment.</p>
+                                        <div class="cert-skills">
+                                            <span class="skill-tag">TensorFlow</span>
+                                            <span class="skill-tag">Keras</span>
+                                            <span class="skill-tag">Deep Learning</span>
+                                            <span class="skill-tag">Model Deployment</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="certification-item">
+                                        <div class="cert-header">
+                                            <div class="cert-icon jlpt-icon">
+                                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="cert-info">
+                                                <h5 data-en="JLPT N3" data-ja="日本語能力試験N3">JLPT N3</h5>
+                                                <span class="cert-provider" data-en="Japanese Language Proficiency Test" data-ja="日本語能力試験">Japanese Language Proficiency Test</span>
+                                                <span class="cert-date">2025</span>
+                                            </div>
+                                            <div class="cert-link cert-badge">
+                                                <span>N3</span>
+                                            </div>
+                                        </div>
+                                        <p class="cert-description" data-en="Intermediate-level Japanese language proficiency certification, demonstrating ability to understand Japanese in everyday situations." data-ja="日常的な場面で日本語を理解する能力を実証する中級レベルの日本語能力認定。">Intermediate-level Japanese language proficiency certification, demonstrating ability to understand Japanese in everyday situations.</p>
+                                        <div class="cert-skills">
+                                            <span class="skill-tag">Japanese Language</span>
+                                            <span class="skill-tag">Business Communication</span>
+                                            <span class="skill-tag">Cultural Competency</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Get In Touch" data-ja="お問い合わせ">Get In Touch</h2>
+                    <p data-en="Have a project in mind or want to collaborate? I'd love to hear from you. Let's create something amazing together." data-ja="プロジェクトのアイデアや協力をお考えですか？ぜひお話を聞かせてください。一緒に素晴らしいものを作りましょう。">Have a project in mind or want to collaborate? I'd love to hear from you. Let's create something amazing together.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form-card">
+                        <div class="form-header">
+                            <h3>Send me a message</h3>
+                            <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                        </div>
+                        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-info-card">
+                            <div class="contact-info-header">
+                                <h3>Contact Information</h3>
+                                <p>Feel free to reach out through any of these channels.</p>
+                            </div>
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    <div>
+                                        <p class="contact-label">Email</p>
+                                        <a href="mailto:bishtpranjal27@gmail.com">bishtpranjal27@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-method">
+                                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    <div>
+                                        <p class="contact-label">Phone</p>
+                                        <a href="tel:+818057399417">+81-8057399417</a>
+                                    </div>
+                                </div>
+                                <div class="contact-method">
+                                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <div>
+                                        <p class="contact-label">Location</p>
+                                        <p>Tokyo, Japan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-card">
+                            <div class="social-header">
+                                <h3>Follow Me</h3>
+                                <p>Connect with me on social media and stay updated with my latest work.</p>
+                            </div>
+                            <div class="social-buttons">
+                                <a href="https://github.com/Pranjal-bisht" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn-outline">
+                                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/pranjal-bisht-95a555220/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn-outline">
+                                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://leetcode.com/error469/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" class="social-btn-outline">
+                                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.518 2.524 8.117.96 2.04-1.226 2.7-3.604 2.7-3.604h-1.428c-.061-.4-.244-.76-.244-.76-.408 1.216-1.327 2.074-2.32 2.074-1.0 0-1.914-.864-1.914-1.9s.914-1.9 1.914-1.9c.993 0 1.912.858 2.32 2.074 0 0 .183.36.244.76h1.428s-.66-2.378-2.7-3.604c-2.599-1.564-5.869-1.205-8.117.96l-.039.038-4.277 4.193a5.938 5.938 0 0 1-1.271-1.818 5.83 5.83 0 0 1-.349-1.017 5.527 5.527 0 0 1-.062-2.362 5.35 5.35 0 0 1 .125-.513 5.266 5.266 0 0 1 1.209-2.104l3.854-4.126L13.483.438A1.374 1.374 0 0 0 13.483 0z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://codeforces.com/profile/Coder_Geralt" target="_blank" rel="noopener noreferrer" aria-label="Codeforces" class="social-btn-outline">
+                                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5S3 20.328 3 19.5V9c0-.828.672-1.5 1.5-1.5zm7.5 0C12.828 7.5 13.5 8.172 13.5 9v10.5c0 .828-.672 1.5-1.5 1.5s-1.5-.672-1.5-1.5V9c0-.828.672-1.5 1.5-1.5zm7.5 0c.828 0 1.5.672 1.5 1.5v10.5c0 .828-.672 1.5-1.5 1.5S18 20.328 18 19.5V9c0-.828.672-1.5 1.5-1.5zM4.5 3C5.328 3 6 3.672 6 4.5S5.328 6 4.5 6 3 5.328 3 4.5 3.672 3 4.5 3zm7.5 0C12.828 3 13.5 3.672 13.5 4.5S12.828 6 12 6s-1.5-.672-1.5-1.5S11.172 3 12 3zm7.5 0c.828 0 1.5.672 1.5 1.5S20.328 6 19.5 6 18 5.328 18 4.5 18.672 3 19.5 3z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.kaggle.com/pranjalbisht" target="_blank" rel="noopener noreferrer" aria-label="Kaggle" class="social-btn-outline">
+                                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.248.495-.248h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.334"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="cta-card">
+                            <div class="cta-header">
+                                <h3>Let's Work Together</h3>
+                            </div>
+                            <p>I'm currently available for freelance projects and full-time opportunities. Whether you need a simple website or a complex web application, I'm here to help.</p>
+                            <a href="mailto:bishtpranjal27@gmail.com" class="btn btn-primary">
+                                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Start a Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Pranjal Bisht</h3>
+                    <p>AI/ML Engineer passionate about building intelligent systems that solve real-world problems. Let's create something amazing together.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/Pranjal-bisht" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pranjal-bisht-95a555220/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:bishtpranjal27@gmail.com" aria-label="Email" class="social-btn">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                        <a href="https://leetcode.com/error469/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" class="social-btn">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.518 2.524 8.117.96 2.04-1.226 2.7-3.604 2.7-3.604h-1.428c-.061-.4-.244-.76-.244-.76-.408 1.216-1.327 2.074-2.32 2.074-1.0 0-1.914-.864-1.914-1.9s.914-1.9 1.914-1.9c.993 0 1.912.858 2.32 2.074 0 0 .183.36.244.76h1.428s-.66-2.378-2.7-3.604c-2.599-1.564-5.869-1.205-8.117.96l-.039.038-4.277 4.193a5.938 5.938 0 0 1-1.271-1.818 5.83 5.83 0 0 1-.349-1.017 5.527 5.527 0 0 1-.062-2.362 5.35 5.35 0 0 1 .125-.513 5.266 5.266 0 0 1 1.209-2.104l3.854-4.126L13.483.438A1.374 1.374 0 0 0 13.483 0z"/>
+                            </svg>
+                        </a>
+                        <a href="https://codeforces.com/profile/Coder_Geralt" target="_blank" rel="noopener noreferrer" aria-label="Codeforces" class="social-btn">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5S3 20.328 3 19.5V9c0-.828.672-1.5 1.5-1.5zm7.5 0C12.828 7.5 13.5 8.172 13.5 9v10.5c0 .828-.672 1.5-1.5 1.5s-1.5-.672-1.5-1.5V9c0-.828.672-1.5 1.5-1.5zm7.5 0c.828 0 1.5.672 1.5 1.5v10.5c0 .828-.672 1.5-1.5 1.5S18 20.328 18 19.5V9c0-.828.672-1.5 1.5-1.5zM4.5 3C5.328 3 6 3.672 6 4.5S5.328 6 4.5 6 3 5.328 3 4.5 3.672 3 4.5 3zm7.5 0C12.828 3 13.5 3.672 13.5 4.5S12.828 6 12 6s-1.5-.672-1.5-1.5S11.172 3 12 3zm7.5 0c.828 0 1.5.672 1.5 1.5S20.328 6 19.5 6 18 5.328 18 4.5 18.672 3 19.5 3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.kaggle.com/pranjalbisht" target="_blank" rel="noopener noreferrer" aria-label="Kaggle" class="social-btn">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.248.495-.248h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.334"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><button onclick="scrollToSection('about')">About</button></li>
+                        <li><button onclick="scrollToSection('competitions')">Competitions</button></li>
+                        <li><button onclick="scrollToSection('skills')">Skills</button></li>
+                        <li><button onclick="scrollToSection('projects')">Projects</button></li>
+                        <li><button onclick="scrollToSection('research')">Research</button></li>
+                        <li><button onclick="scrollToSection('experience')">Experience</button></li>
+                        <li><button onclick="scrollToSection('contact')">Contact</button></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact-info">
+                        <p><a href="mailto:bishtpranjal27@gmail.com">bishtpranjal27@gmail.com</a></p>
+                        <p><a href="tel:+818057399417">+81-8057399417</a></p>
+                        <p>Tokyo, Japan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; <span id="currentYear"></span> Pranjal Bisht. All rights reserved.</p>
+                    <p class="footer-love">
+                        Made with <span class="heart">❤️</span> and lots of coffee
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile menu state
+        let mobileMenuOpen = false;
+
+        // Dark mode functionality
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            
+            // Update theme toggle icon
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            
+            if (isDark) {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            }
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            mobileMenuOpen = !mobileMenuOpen;
+            const mobileNav = document.querySelector('.mobile-nav');
+            const menuIcon = document.querySelector('.menu-icon');
+            const closeIcon = document.querySelector('.close-icon');
+            
+            if (mobileMenuOpen) {
+                mobileNav.style.display = 'block';
+                menuIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+            } else {
+                mobileNav.style.display = 'none';
+                menuIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            }
+        }
+
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+            
+            // Close mobile menu if open
+            if (mobileMenuOpen) {
+                toggleMobileMenu();
+            }
+        }
+
+        // Contact form handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            console.log('Form submitted:', data);
+            alert("Thank you for your message! I'll get back to you soon.");
+            event.target.reset();
+        }
+
+        // Initialize theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const isDark = document.documentElement.classList.contains('dark');
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            
+            if (isDark) {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            }
+        });
+
+        // Lightbox functionality
+        function openLightbox(imageSrc, title) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            
+            lightboxImg.src = imageSrc;
+            lightboxTitle.textContent = title;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox when clicking outside the image
+        // Language Toggle Function
+        function toggleLanguage() {
+            const currentLang = document.documentElement.getAttribute('data-lang') || 'en';
+            const newLang = currentLang === 'en' ? 'ja' : 'en';
+            
+            // Update document language attribute
+            document.documentElement.setAttribute('data-lang', newLang);
+            
+            // Store language preference
+            localStorage.setItem('preferred-language', newLang);
+            
+            // Update all elements with language data attributes
+            const elementsToTranslate = document.querySelectorAll('[data-en][data-ja]');
+            elementsToTranslate.forEach(element => {
+                const translation = element.getAttribute(`data-${newLang}`);
+                if (translation) {
+                    element.textContent = translation;
+                }
+            });
+        }
+
+        // Initialize language on page load
+        function initializeLanguage() {
+            const savedLang = localStorage.getItem('preferred-language') || 'en';
+            if (savedLang === 'ja') {
+                document.documentElement.setAttribute('data-lang', 'ja');
+                
+                // Apply Japanese translations
+                const elementsToTranslate = document.querySelectorAll('[data-en][data-ja]');
+                elementsToTranslate.forEach(element => {
+                    const translation = element.getAttribute('data-ja');
+                    if (translation) {
+                        element.textContent = translation;
+                    }
+                });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize language
+            initializeLanguage();
+            
+            const lightbox = document.getElementById('lightbox');
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+        });
+    </script>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" class="lightbox-image" alt="Interest Photo">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
