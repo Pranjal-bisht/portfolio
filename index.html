@@ -538,7 +538,7 @@
                     <div class="tech-grid">
                         <div class="tech-item">
                             <div class="tech-logo langchain">
-                                <img src="https://python.langchain.com/img/brand/wordmark.png" alt="LangChain" style="filter: brightness(0) invert(1);" />
+                                <img src="https://avatars.githubusercontent.com/u/126733545?s=200&v=4" alt="LangChain" />
                             </div>
                             <div class="tech-info">
                                 <h4>LangChain</h4>
@@ -550,7 +550,7 @@
                         </div>
                         <div class="tech-item">
                             <div class="tech-logo openai">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="OpenAI GPT" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI GPT" />
                             </div>
                             <div class="tech-info">
                                 <h4>OpenAI GPT</h4>
@@ -561,24 +561,20 @@
                             </div>
                         </div>
                         <div class="tech-item">
-                            <div class="tech-logo">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm-1 4v12l9-6-9-6z"/>
-                            </svg>
-                                </div>
+                            <div class="tech-logo prompteng">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/probot.svg" alt="Prompt Engineering" />
+                            </div>
                             <div class="tech-info">
                                 <h4>Prompt Engineering</h4>
                                 <div class="proficiency-bar">
                                     <div class="proficiency-fill" style="width: 92%"></div>
-                                    </div>
-                                <span class="proficiency-text">Expert - 92%</span>
-                                    </div>
                                 </div>
+                                <span class="proficiency-text">Expert - 92%</span>
+                            </div>
+                        </div>
                         <div class="tech-item">
-                            <div class="tech-logo">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 4.5h3v3h-3v-3zm0 4.5h3v7.5h-3V9z"/>
-                                </svg>
+                            <div class="tech-logo agentdev">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/robotframework.svg" alt="Agent Development" />
                             </div>
                             <div class="tech-info">
                                 <h4>Agent Development</h4>
@@ -940,22 +936,41 @@
                             </div>
 
                     <div class="research-card">
-                        <div class="research-image" onclick="openLightbox('photos/Watershed.png', 'Geo-spatial Image Segmentation Research')" style="cursor: pointer;">
-                            <img src="photos/Watershed.png" alt="Geo-spatial Segmentation Research" class="research-img">
+                        <div class="research-image">
+                            <!-- Research Image Gallery -->
+                            <div class="project-gallery research-gallery">
+                                <div class="gallery-container">
+                                    <div class="gallery-slides">
+                                        <div class="gallery-slide active">
+                                            <img src="photos/Watershed.png" alt="Geo-spatial Segmentation Research" onclick="openLightbox('photos/Watershed.png', 'Geo-spatial Image Segmentation - Pipeline Overview')">
+                                            <div class="slide-caption" data-en="Instance Segmentation Pipeline" data-ja="インスタンスセグメンテーションパイプライン">Instance Segmentation Pipeline</div>
+                                        </div>
+                                        <div class="gallery-slide">
+                                            <img src="photos/watershed 2.PNG" alt="Watershed Segmentation Results" onclick="openLightbox('photos/watershed 2.PNG', 'Watershed Segmentation Results')">
+                                            <div class="slide-caption" data-en="Building Footprint Extraction Results" data-ja="建物フットプリント抽出結果">Building Footprint Extraction Results</div>
+                                        </div>
+                                        <div class="gallery-slide">
+                                            <img src="photos/watershed 3.PNG" alt="GIS Vector Layer Generation" onclick="openLightbox('photos/watershed 3.PNG', 'GIS Vector Layer Generation')">
+                                            <div class="slide-caption" data-en="GIS-Ready Vector Layer Output" data-ja="GIS対応ベクターレイヤー出力">GIS-Ready Vector Layer Output</div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-nav">
+                                        <button class="gallery-prev" onclick="changeSlide(this, -1)">‹</button>
+                                        <div class="gallery-dots">
+                                            <span class="gallery-dot active" onclick="currentSlide(this, 1)"></span>
+                                            <span class="gallery-dot" onclick="currentSlide(this, 2)"></span>
+                                            <span class="gallery-dot" onclick="currentSlide(this, 3)"></span>
+                                        </div>
+                                        <button class="gallery-next" onclick="changeSlide(this, 1)">›</button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="research-overlay">
                                 <div class="research-badges">
                                     <span class="badge">Computer Vision</span>
                                     <span class="badge">GIS</span>
-                        </div>
-                                <div class="image-zoom-hint">
-                                    <svg class="zoom-icon" fill="currentColor" viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8"/>
-                                        <path d="M21 21l-4.35-4.35"/>
-                                        <line x1="11" y1="8" x2="11" y2="14"/>
-                                        <line x1="8" y1="11" x2="14" y2="11"/>
-                                    </svg>
-                    </div>
-                </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="research-content">
                             <h3 data-en="Geo-spatial Image Segmentation" data-ja="地理空間画像セグメンテーション">Geo-spatial Image Segmentation</h3>
@@ -1295,7 +1310,7 @@
                                             <div class="gallery-container">
                                                 <div class="gallery-slides">
                                                     <div class="gallery-slide active">
-                                                        <img src="photos/willings 2.png" alt="Business Growth Strategy" onclick="openLightbox('photos/willings 2.png', 'Business Growth Strategy')">
+                                                        <img src="photos/willings 2.JPG" alt="Business Growth Strategy" onclick="openLightbox('photos/willings 2.JPG', 'Business Growth Strategy')">
                                                         <div class="slide-caption" data-en="Customer Segmentation & Revenue Growth" data-ja="顧客セグメンテーションと収益成長">Customer Segmentation & Revenue Growth</div>
                                                     </div>
                                                 </div>
@@ -1336,7 +1351,7 @@
                                             <div class="gallery-container">
                                                 <div class="gallery-slides">
                                                     <div class="gallery-slide active">
-                                                        <img src="photos/willings 3.png" alt="AI Price Estimation Platform" onclick="openLightbox('photos/willings 3.png', 'AI Price Estimation Platform')">
+                                                        <img src="photos/willings 3.PNG" alt="AI Price Estimation Platform" onclick="openLightbox('photos/willings 3.PNG', 'AI Price Estimation Platform')">
                                                         <div class="slide-caption" data-en="NLP Pipeline & Price Prediction Results" data-ja="NLPパイプラインと価格予測結果">NLP Pipeline & Price Prediction Results</div>
                                                     </div>
                                                 </div>
@@ -1528,6 +1543,12 @@
                                 </div>
                                     </div>
                                 </div>
+                                
+                                <!-- IIT BHU Campus Image -->
+                                <div class="education-image">
+                                    <img src="photos/IIT BHU.jpg" alt="IIT BHU Campus" onclick="openLightbox('photos/IIT BHU.jpg', 'IIT BHU Campus - Varanasi')" style="cursor: pointer;">
+                                </div>
+                                
                                 <div class="education-content">
                                     <div class="degree-focus">
                                         <h6>Research Focus: Structural Health Monitoring & AI</h6>
