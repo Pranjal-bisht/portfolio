@@ -3737,3 +3737,67 @@ p {
 .tech-logo.agentdev {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
+
+/* Certificate Image Styles */
+.cert-image {
+    position: relative;
+    margin: 1rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cert-image:hover {
+    transform: scale(1.02);
+}
+
+.cert-image img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cert-image .image-zoom-hint {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cert-image:hover .image-zoom-hint {
+    opacity: 1;
+}
+
+.cert-image .zoom-icon {
+    font-size: 0.8rem;
+}
+
+/* Dark mode adjustments for certificate image */
+.dark .cert-image img {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cert-image img {
+        max-height: 200px;
+    }
+    
+    .cert-image .image-zoom-hint {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
+}
